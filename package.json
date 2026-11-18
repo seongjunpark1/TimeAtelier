@@ -1,0 +1,11 @@
+{
+  "name": "timetable-maker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "조건 기반 대학 시간표 조합 생성기 (서버 없는 순수 HTML/CSS/JS)",
+  "scripts": {
+    "test": "node --test",
+    "test:ui": "node --test tests/browser/ui-check.mjs"
+  }
+}

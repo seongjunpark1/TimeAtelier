@@ -1,0 +1,6 @@
+# 개인 성적 파일은 절대 커밋하지 않는다
+*.csv
+*.pdf
+__pycache__/
+node_modules/
+.DS_Store

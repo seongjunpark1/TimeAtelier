@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>시간표 공방</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>시간표 공방</h1>
+    <p class="sub">전공과 꼭 넣을 과목, 조건을 정하면 시간이 겹치지 않는 조합 중 가장 좋은 20개를 골라드려요. <span id="semester"></span></p>
+  </header>
+
+  <main class="layout">
+    <div class="panel-col">
+      <!-- 1단계: 전공·학년 -->
+      <section class="card" aria-labelledby="step1">
+        <h2 id="step1"><span class="step">1</span> 전공과 학년 고르기</h2>
+        <p class="hint" id="step1Hint">고른 전공(주전공 + 복수전공·부전공)의 과목 중 내 학년이 들을 수 있고 아직 안 들은 과목으로 남은 학점을 자동으로 채웁니다.</p>
+        <div class="field-row">
+          <!-- 1학년만 보인다: 학부 소속이면 그 학부 전탐만, 자유전공학부면 모든 학부 전탐을 들을 수 있다 -->
+          <label class="grow" id="deptField" hidden>소속
+            <select id="freshmanDept"><option value="">선택하세요</option></select>
+          </label>
+          <!-- 1학년 자유전공학부면 app.js가 '관심 전공'으로 이름을 바꾸고, 학부 소속 1학년이면 숨긴다 -->
+          <label class="grow" id="mainMajorField"><span id="mainMajorLabel">주전공</span>
+            <select id="mainMajor"><option value="">선택 안 함 (담은 과목으로만 짜기)</option></select>
+          </label>
+          <label>내 학년
+            <select id="myGrade">
+              <option value="0">상관없음</option>
+              <option value="1">1학년</option>
+              <option value="2">2학년</option>
+              <option value="3">3학년</option>
+              <option value="4">4학년</option>
+            </select>
+          </label>
+        </div>
+        <!-- 1학년은 전공이 정해지지 않아서 app.js가 이 영역을 숨긴다 -->
+        <div id="secondArea" class="field-row">
+          <fieldset class="toggle">
+            <legend>이수 방식</legend>
+            <div class="seg">
+              <label><input type="radio" name="secondType" value="복수전공" checked><span>복수전공</span></label>
+              <label><input type="radio" name="secondType" value="부전공"><span>부전공</span></label>
+            </div>
+          </fieldset>
+          <label class="grow">복수전공·부전공
+            <select id="secondMajor"><option value="">선택 안 함</option></select>
+          </label>
+        </div>
+        <!-- 복수전공·부전공을 고르지 않으면 이수 방식 버튼이 의미가 없으므로, 버튼을 흐리게 하고 이 안내를 띄운다 -->
+        <p id="secondHint" class="hint second-hint" hidden></p>
+        <p id="majorWarn" class="status error" hidden></p>
+        <p id="poolInfo" class="status"></p>
+      </section>
+
+      <!-- 2단계: 꼭 넣을 과목 -->
+      <section class="card" aria-labelledby="step2">
+        <h2 id="step2"><span class="step">2</span> 꼭 넣을 과목 담기 <span class="muted">(0개도 괜찮아요)</span></h2>
+        <!-- 1학년 교양필수: 학부마다 학기별로 듣는 과목이 달라서 학생이 분반을 직접 고른다. 1학년일 때만 보인다 -->
+        <div id="liberalArea" hidden>
+          <h3>1학년 교양필수</h3>
+          <p class="hint">이번 학기에 듣는 과목만 분반(교수·시간)을 고르세요. 고른 분반은 그 시간에 고정되고, 나머지 학점은 전공탐색 과목으로 채웁니다.</p>
+          <div id="liberalList"></div>
+          <p id="liberalWarn" class="status error" hidden></p>
+          <p id="liberalNotice" class="status warn" hidden></p>
+          <h3>그 밖에 꼭 넣을 과목</h3>
+        </div>
+        <p class="hint">담은 과목은 모든 결과에 들어갑니다. 같은 과목의 분반을 여러 개 담으면 그중 하나가 들어가요.</p>
+        <div class="search-row">
+          <input id="search" type="search" placeholder="과목명, 과목코드, 교수명" autocomplete="off">
+          <select id="category" aria-label="개설 영역"><option value="">전체 영역</option></select>
+        </div>
+        <label class="check small"><input type="checkbox" id="hideTaken" checked> 이수한 과목 숨기기</label>
+        <ul id="results" class="course-list" aria-live="polite"></ul>
+
+        <h3>담은 과목 <span id="cartCount" class="muted"></span></h3>
+        <ul id="cart" class="course-list cart"></ul>
+        <p id="cartWarn" class="status error" hidden></p>
+      </section>
+
+      <!-- 3단계: 조건 -->
+      <section class="card" aria-labelledby="step3">
+        <h2 id="step3"><span class="step">3</span> 조건 정하기</h2>
+        <div class="field-row">
+          <label>최소 학점 <input id="minCredit" type="number" min="0" max="24" value="15"></label>
+          <label>최대 학점 <input id="maxCredit" type="number" min="1" max="24" value="18"></label>
+        </div>
+        <!-- 1단계에서 고른 전공마다 한 줄씩 app.js가 채운다. 전공을 안 고르면 숨긴다 -->
+        <div id="majorCreditArea" hidden>
+          <h3>전공별 학점</h3>
+          <p class="hint">비워 두면 제한이 없습니다. 담은 과목도 그 전공 과목이면 포함해서 셉니다.</p>
+          <div id="majorCredits"></div>
+        </div>
+        <fieldset class="days">
+          <legend>공강 요일</legend>
+          <div id="offDays"></div>
+        </fieldset>
+        <div class="field-row">
+          <label>이 시간 전 수업 빼기
+            <select id="earliestStart">
+              <option value="0">상관없음</option>
+              <option value="600">10:00</option>
+              <option value="630">10:30</option>
+              <option value="720">12:00</option>
+            </select>
+          </label>
+          <label>이 시간 후 수업 빼기
+            <select id="latestEnd">
+              <option value="1440">상관없음</option>
+              <option value="1080">18:00</option>
+              <option value="1020">17:00</option>
+            </select>
+          </label>
+        </div>
+
+        <h3>이수 과목 불러오기</h3>
+        <p class="hint">종합정보시스템 → 졸업자가진단 → 전체성적 엑셀을 다운받고 <b>CSV UTF-8(쉼표로 분리)</b>형식으로 다른이름으로 저장해서 여기에 올리세요.
+          파일은 이 브라우저 안에서만 읽히고, 과목코드만 저장됩니다.</p>
+        <div class="upload-row">
+          <input id="gradeFile" type="file" accept=".csv,text/csv">
+          <!-- 불러온 성적 파일(이수 과목)만 지운다. 다른 설정은 그대로 -->
+          <button id="clearTaken" type="button" class="ghost">파일 초기화</button>
+        </div>
+        <p id="takenStatus" class="status"></p>
+
+        <button id="generate" type="button" class="primary">시간표 조합 만들기</button>
+        <!-- 담은 과목·이수 과목·교양필수 분반·조건을 모두 지우고 처음 상태로 되돌린다 -->
+        <button id="resetAll" type="button" class="ghost reset-all">전체 초기화</button>
+      </section>
+    </div>
+
+    <!-- 결과 -->
+    <section class="card result" aria-labelledby="step4">
+      <div class="result-head">
+        <h2 id="step4"><span class="step">4</span> 결과</h2>
+        <label class="sort">순위 기준
+          <select id="sort">
+            <option value="free">공강 많은 순</option>
+            <option value="morning">오전 수업 적은 순</option>
+            <option value="required">전공필수 많은 순</option>
+            <option value="major">전공 많이 넣는 순</option>
+          </select>
+        </label>
+      </div>
+      <p id="resultStatus" class="status">전공을 고르거나 과목을 담고 조합을 만들어 보세요.</p>
+      <!-- 결과를 만든 뒤 조건이 바뀌면 app.js가 보여 준다 -->
+      <p id="staleNotice" class="status warn" hidden>조건이 바뀌었습니다. '시간표 조합 만들기'를 다시 눌러야 아래 결과에 반영됩니다.</p>
+      <div class="pager" hidden id="pager">
+        <button id="prev" type="button" class="ghost" aria-label="이전 조합">이전</button>
+        <span id="pageInfo"></span>
+        <button id="next" type="button" class="ghost" aria-label="다음 조합">다음</button>
+      </div>
+      <div id="grid" class="grid" hidden></div>
+      <ul id="summary" class="summary"></ul>
+
+      <!-- 이번 학기 공휴일: app.js가 페이지를 열 때 따로(백그라운드로) 불러와 채운다.
+           불러오는 중이거나 실패해도 위의 시간표 만들기에는 영향이 없다 -->
+      <div id="holidayArea" class="holidays">
+        <h3>이번 학기 공휴일 <span id="holidayPeriod" class="muted"></span></h3>
+        <p id="holidayStatus" class="status" aria-live="polite">공휴일 불러오는 중…</p>
+        <button id="holidayRetry" type="button" class="ghost" hidden>다시 시도</button>
+        <ul id="holidayList" class="holiday-list"></ul>
+        <p class="source muted">공휴일 정보: <a href="https://date.nager.at" target="_blank" rel="noopener noreferrer">Nager.Date</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

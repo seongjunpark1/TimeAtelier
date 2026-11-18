@@ -1,0 +1,8080 @@
+{
+ "semester": "2026-2",
+ "courses": [
+  {
+   "code": "AC00007",
+   "section": "01",
+   "name": "인권과평화",
+   "credit": 2,
+   "professor": "강성현",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 인권과 평화",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "7207"
+    }
+   ],
+   "id": "AC00007-01"
+  },
+  {
+   "code": "AC00007",
+   "section": "02",
+   "name": "인권과평화",
+   "credit": 2,
+   "professor": "김기명",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 인권과 평화",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "7308"
+    }
+   ],
+   "id": "AC00007-02"
+  },
+  {
+   "code": "AC00007",
+   "section": "03",
+   "name": "인권과평화",
+   "credit": 2,
+   "professor": "이기웅",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 인권과 평화",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "M205"
+    }
+   ],
+   "id": "AC00007-03"
+  },
+  {
+   "code": "AC00007",
+   "section": "04",
+   "name": "인권과평화",
+   "credit": 2,
+   "professor": "오영숙",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 인권과 평화",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "3402"
+    }
+   ],
+   "id": "AC00007-04"
+  },
+  {
+   "code": "AC00007",
+   "section": "05",
+   "name": "인권과평화",
+   "credit": 2,
+   "professor": "김향수",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 인권과 평화",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "7208"
+    }
+   ],
+   "id": "AC00007-05"
+  },
+  {
+   "code": "AC00007",
+   "section": "06",
+   "name": "인권과평화",
+   "credit": 2,
+   "professor": "김현준",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 인권과 평화",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "3502"
+    }
+   ],
+   "id": "AC00007-06"
+  },
+  {
+   "code": "AC00013",
+   "section": "01",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "오현화",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 650,
+     "room": "1504"
+    }
+   ],
+   "id": "AC00013-01"
+  },
+  {
+   "code": "AC00013",
+   "section": "02",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "유승현",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 650,
+     "room": "1505"
+    }
+   ],
+   "id": "AC00013-02"
+  },
+  {
+   "code": "AC00013",
+   "section": "03",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "유승현",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "화",
+     "start": 660,
+     "end": 770,
+     "room": "1503"
+    }
+   ],
+   "id": "AC00013-03"
+  },
+  {
+   "code": "AC00013",
+   "section": "04",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "오현화",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "화",
+     "start": 660,
+     "end": 770,
+     "room": "1504"
+    }
+   ],
+   "id": "AC00013-04"
+  },
+  {
+   "code": "AC00013",
+   "section": "05",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "곽승숙",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 650,
+     "room": "1505"
+    }
+   ],
+   "id": "AC00013-05"
+  },
+  {
+   "code": "AC00013",
+   "section": "06",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "박주혜",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 650,
+     "room": "1506"
+    }
+   ],
+   "id": "AC00013-06"
+  },
+  {
+   "code": "AC00013",
+   "section": "07",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "곽승숙",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "목",
+     "start": 660,
+     "end": 770,
+     "room": "1505"
+    }
+   ],
+   "id": "AC00013-07"
+  },
+  {
+   "code": "AC00013",
+   "section": "08",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "박주혜",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "목",
+     "start": 660,
+     "end": 770,
+     "room": "1506"
+    }
+   ],
+   "id": "AC00013-08"
+  },
+  {
+   "code": "AC00013",
+   "section": "09",
+   "name": "말과글",
+   "credit": 2,
+   "professor": "오현화",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 말과 글",
+   "times": [
+    {
+     "day": "목",
+     "start": 660,
+     "end": 770,
+     "room": "1504"
+    }
+   ],
+   "id": "AC00013-09"
+  },
+  {
+   "code": "AC00016",
+   "section": "01",
+   "name": "과학기술과에콜로지",
+   "credit": 2,
+   "professor": "김명진",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 과학기술과 에콜로지",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 650,
+     "room": "7207"
+    }
+   ],
+   "id": "AC00016-01"
+  },
+  {
+   "code": "AC00016",
+   "section": "02",
+   "name": "과학기술과에콜로지",
+   "credit": 2,
+   "professor": "김병수",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 과학기술과 에콜로지",
+   "times": [
+    {
+     "day": "화",
+     "start": 660,
+     "end": 770,
+     "room": "7207"
+    }
+   ],
+   "id": "AC00016-02"
+  },
+  {
+   "code": "AC00016",
+   "section": "03",
+   "name": "과학기술과에콜로지",
+   "credit": 2,
+   "professor": "김명철, 신익상",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 과학기술과 에콜로지",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 650,
+     "room": "3402"
+    }
+   ],
+   "id": "AC00016-03"
+  },
+  {
+   "code": "AC00016",
+   "section": "04",
+   "name": "과학기술과에콜로지",
+   "credit": 2,
+   "professor": "김명철, 신익상",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 과학기술과 에콜로지",
+   "times": [
+    {
+     "day": "화",
+     "start": 660,
+     "end": 770,
+     "room": "3402"
+    }
+   ],
+   "id": "AC00016-04"
+  },
+  {
+   "code": "AC00016",
+   "section": "05",
+   "name": "과학기술과에콜로지",
+   "credit": 2,
+   "professor": "신익상, 김명철",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 과학기술과 에콜로지",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 650,
+     "room": "3502"
+    }
+   ],
+   "id": "AC00016-05"
+  },
+  {
+   "code": "AC00016",
+   "section": "06",
+   "name": "과학기술과에콜로지",
+   "credit": 2,
+   "professor": "신익상, 김명철",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 과학기술과 에콜로지",
+   "times": [
+    {
+     "day": "화",
+     "start": 660,
+     "end": 770,
+     "room": "3502"
+    }
+   ],
+   "id": "AC00016-06"
+  },
+  {
+   "code": "AK00179",
+   "section": "01",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "윤명호",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "3302"
+    }
+   ],
+   "id": "AK00179-01"
+  },
+  {
+   "code": "AK00179",
+   "section": "02",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "이해신",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "M401"
+    }
+   ],
+   "id": "AK00179-02"
+  },
+  {
+   "code": "AK00179",
+   "section": "03",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "김덕봉",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "6201"
+    }
+   ],
+   "id": "AK00179-03"
+  },
+  {
+   "code": "AK00179",
+   "section": "04",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "이하규",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "6206"
+    }
+   ],
+   "id": "AK00179-04"
+  },
+  {
+   "code": "AK00179",
+   "section": "05",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "이상윤",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "7309"
+    }
+   ],
+   "id": "AK00179-05"
+  },
+  {
+   "code": "AK00179",
+   "section": "06",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "곽승우",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "7202"
+    }
+   ],
+   "id": "AK00179-06"
+  },
+  {
+   "code": "AK00179",
+   "section": "07",
+   "name": "디지털리터러시",
+   "credit": 2,
+   "professor": "공준욱",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 디지털리터러시",
+   "times": [
+    {
+     "day": "금",
+     "start": 600,
+     "end": 710,
+     "room": "M402"
+    }
+   ],
+   "id": "AK00179-07"
+  },
+  {
+   "code": "AK00183",
+   "section": "01",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김혜인",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7301"
+    }
+   ],
+   "id": "AK00183-01"
+  },
+  {
+   "code": "AK00183",
+   "section": "02",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김아름",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7302"
+    }
+   ],
+   "id": "AK00183-02"
+  },
+  {
+   "code": "AK00183",
+   "section": "03",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "윤영도",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7303"
+    }
+   ],
+   "id": "AK00183-03"
+  },
+  {
+   "code": "AK00183",
+   "section": "04",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "송재민",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7301"
+    }
+   ],
+   "id": "AK00183-04"
+  },
+  {
+   "code": "AK00183",
+   "section": "05",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김용미",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7302"
+    }
+   ],
+   "id": "AK00183-05"
+  },
+  {
+   "code": "AK00183",
+   "section": "06",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "황준서",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7303"
+    }
+   ],
+   "id": "AK00183-06"
+  },
+  {
+   "code": "AK00183",
+   "section": "07",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "이상철",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7305"
+    }
+   ],
+   "id": "AK00183-07"
+  },
+  {
+   "code": "AK00183",
+   "section": "08",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김태경",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7306"
+    }
+   ],
+   "id": "AK00183-08"
+  },
+  {
+   "code": "AK00183",
+   "section": "09",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "최정태",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7304"
+    }
+   ],
+   "id": "AK00183-09"
+  },
+  {
+   "code": "AK00183",
+   "section": "10",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "윤장열",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7305"
+    }
+   ],
+   "id": "AK00183-10"
+  },
+  {
+   "code": "AK00183",
+   "section": "11",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "이원정",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7306"
+    }
+   ],
+   "id": "AK00183-11"
+  },
+  {
+   "code": "AK00183",
+   "section": "12",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "오세현",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7304"
+    }
+   ],
+   "id": "AK00183-12"
+  },
+  {
+   "code": "AK00183",
+   "section": "13",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김수림",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "6404"
+    }
+   ],
+   "id": "AK00183-13"
+  },
+  {
+   "code": "AK00183",
+   "section": "14",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "곽승우",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "6206"
+    }
+   ],
+   "id": "AK00183-14"
+  },
+  {
+   "code": "AK00183",
+   "section": "15",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김선형",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "6404"
+    }
+   ],
+   "id": "AK00183-15"
+  },
+  {
+   "code": "AK00183",
+   "section": "16",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김명철",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "6206"
+    }
+   ],
+   "id": "AK00183-16"
+  },
+  {
+   "code": "AK00183",
+   "section": "17",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "박정식",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "3301"
+    }
+   ],
+   "id": "AK00183-17"
+  },
+  {
+   "code": "AK00183",
+   "section": "18",
+   "name": "전공진로세미나",
+   "credit": 1,
+   "professor": "김덕봉",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 전공진로세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "M406"
+    }
+   ],
+   "id": "AK00183-18"
+  },
+  {
+   "code": "AK00184",
+   "section": "01",
+   "name": "자유전공팀세미나",
+   "credit": 1,
+   "professor": "김기명",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 자유전공팀세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00184-01"
+  },
+  {
+   "code": "AK00184",
+   "section": "02",
+   "name": "자유전공팀세미나",
+   "credit": 1,
+   "professor": "이현아",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 자유전공팀세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00184-02"
+  },
+  {
+   "code": "AK00184",
+   "section": "03",
+   "name": "자유전공팀세미나",
+   "credit": 1,
+   "professor": "윤명호",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 자유전공팀세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "3301"
+    }
+   ],
+   "id": "AK00184-03"
+  },
+  {
+   "code": "AK00184",
+   "section": "04",
+   "name": "자유전공팀세미나",
+   "credit": 1,
+   "professor": "이해청",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 자유전공팀세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "M406"
+    }
+   ],
+   "id": "AK00184-04"
+  },
+  {
+   "code": "AK00184",
+   "section": "05",
+   "name": "자유전공팀세미나",
+   "credit": 1,
+   "professor": "김기명",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 자유전공팀세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00184-05"
+  },
+  {
+   "code": "AK00184",
+   "section": "06",
+   "name": "자유전공팀세미나",
+   "credit": 1,
+   "professor": "이현아",
+   "type": "교양필수",
+   "grade": "1",
+   "category": "기초핵심교육 – 자유전공팀세미나",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00184-06"
+  },
+  {
+   "code": "AC00003",
+   "section": "01",
+   "name": "사회봉사Ⅰ",
+   "credit": 2,
+   "professor": "손다진",
+   "type": "교양필수",
+   "grade": "2,3,4",
+   "category": "기초핵심교육 – 사회봉사",
+   "times": [
+    {
+     "day": "화",
+     "start": 600,
+     "end": 710,
+     "room": "M301"
+    }
+   ],
+   "id": "AC00003-01"
+  },
+  {
+   "code": "AC00003",
+   "section": "02",
+   "name": "사회봉사Ⅰ",
+   "credit": 2,
+   "professor": "손다진",
+   "type": "교양필수",
+   "grade": "2,3,4",
+   "category": "기초핵심교육 – 사회봉사",
+   "times": [
+    {
+     "day": "목",
+     "start": 600,
+     "end": 710,
+     "room": "M301"
+    }
+   ],
+   "id": "AC00003-02"
+  },
+  {
+   "code": "AE00044",
+   "section": "01",
+   "name": "농촌봉사",
+   "credit": 2,
+   "professor": "열림교양대학",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "기초핵심교육 – 사회봉사",
+   "times": [],
+   "id": "AE00044-01"
+  },
+  {
+   "code": "AE00046",
+   "section": "01",
+   "name": "해외봉사",
+   "credit": 2,
+   "professor": "최준기",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "기초핵심교육 – 사회봉사",
+   "times": [
+    {
+     "day": "수",
+     "start": 1080,
+     "end": 1190,
+     "room": "7202"
+    }
+   ],
+   "id": "AE00046-01"
+  },
+  {
+   "code": "AF00008",
+   "section": "01",
+   "name": "과학기술과 사회",
+   "credit": 3,
+   "professor": "김병수",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7208"
+    }
+   ],
+   "id": "AF00008-01"
+  },
+  {
+   "code": "AF00048",
+   "section": "01",
+   "name": "생활속의 물리학",
+   "credit": 3,
+   "professor": "김강배",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "M402"
+    }
+   ],
+   "id": "AF00048-01"
+  },
+  {
+   "code": "AF00050",
+   "section": "01",
+   "name": "천문학의 세계",
+   "credit": 3,
+   "professor": "이성환",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "3501"
+    }
+   ],
+   "id": "AF00050-01"
+  },
+  {
+   "code": "AK00011",
+   "section": "01",
+   "name": "확률과통계",
+   "credit": 3,
+   "professor": "윤명호",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "3301"
+    }
+   ],
+   "id": "AK00011-01"
+  },
+  {
+   "code": "AK00012",
+   "section": "01",
+   "name": "근대과학의풍경",
+   "credit": 3,
+   "professor": "김명진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "3501"
+    }
+   ],
+   "id": "AK00012-01"
+  },
+  {
+   "code": "AK00111",
+   "section": "01",
+   "name": "Big Data Theory and Practice",
+   "credit": 3,
+   "professor": "김양희",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "M402"
+    }
+   ],
+   "id": "AK00111-01"
+  },
+  {
+   "code": "AK00178",
+   "section": "01",
+   "name": "인공지능과사람",
+   "credit": 3,
+   "professor": "장여경",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 과학기술과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "7208"
+    }
+   ],
+   "id": "AK00178-01"
+  },
+  {
+   "code": "AE00039",
+   "section": "01",
+   "name": "협동조합과 대안사회",
+   "credit": 3,
+   "professor": "강진희",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 경제와 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7307"
+    }
+   ],
+   "id": "AE00039-01"
+  },
+  {
+   "code": "AK00087",
+   "section": "01",
+   "name": "기업가정신CEO특강",
+   "credit": 3,
+   "professor": "이종인",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 경제와 미래사회 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7207"
+    }
+   ],
+   "id": "AK00087-01"
+  },
+  {
+   "code": "AK00090",
+   "section": "01",
+   "name": "콘텐츠세계로미래로",
+   "credit": 3,
+   "professor": "전현택",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 경제와 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "M301"
+    }
+   ],
+   "id": "AK00090-01"
+  },
+  {
+   "code": "AK00099",
+   "section": "01",
+   "name": "디지털콘텐츠해외사례분석",
+   "credit": 3,
+   "professor": "전현택",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 경제와 미래사회 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "M301"
+    }
+   ],
+   "id": "AK00099-01"
+  },
+  {
+   "code": "AK00101",
+   "section": "01",
+   "name": "한국경제알아보기",
+   "credit": 3,
+   "professor": "이상철",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 경제와 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "M205"
+    }
+   ],
+   "id": "AK00101-01"
+  },
+  {
+   "code": "AK00194",
+   "section": "01",
+   "name": "대학생을위한노동법",
+   "credit": 3,
+   "professor": "김건우",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 경제와 미래사회 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00194-01"
+  },
+  {
+   "code": "AF00037",
+   "section": "01",
+   "name": "자연과 생명",
+   "credit": 3,
+   "professor": "김추령",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 환경과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "3401"
+    }
+   ],
+   "id": "AF00037-01"
+  },
+  {
+   "code": "AF00056",
+   "section": "01",
+   "name": "기후위기와 지속가능한 농업",
+   "credit": 3,
+   "professor": "김병수",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 환경과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7204"
+    }
+   ],
+   "id": "AF00056-01"
+  },
+  {
+   "code": "AK00024",
+   "section": "01",
+   "name": "몸과윤리",
+   "credit": 3,
+   "professor": "변혜진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 환경과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7208"
+    }
+   ],
+   "id": "AK00024-01"
+  },
+  {
+   "code": "AK00192",
+   "section": "01",
+   "name": "인간,동물그리고기후의역사",
+   "credit": 3,
+   "professor": "남종영",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 환경과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "M205"
+    }
+   ],
+   "id": "AK00192-01"
+  },
+  {
+   "code": "AD00150",
+   "section": "01",
+   "name": "한국현대사회의 이해",
+   "credit": 3,
+   "professor": "송용한",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "1506"
+    }
+   ],
+   "id": "AD00150-01"
+  },
+  {
+   "code": "AE00070",
+   "section": "01",
+   "name": "세계노동운동의 역사와 이론",
+   "credit": 3,
+   "professor": "배성인",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "1504"
+    }
+   ],
+   "id": "AE00070-01"
+  },
+  {
+   "code": "AK00061",
+   "section": "01",
+   "name": "성과문화",
+   "credit": 3,
+   "professor": "김순남",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "1506"
+    }
+   ],
+   "id": "AK00061-01"
+  },
+  {
+   "code": "AK00062",
+   "section": "01",
+   "name": "현대사회와법2",
+   "credit": 3,
+   "professor": "박선화",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00062-01"
+  },
+  {
+   "code": "AK00148",
+   "section": "01",
+   "name": "글로벌트랜드분석과미래세계",
+   "credit": 3,
+   "professor": "이남주",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00148-01"
+  },
+  {
+   "code": "AK00152",
+   "section": "01",
+   "name": "우리사회에대한철학적성찰",
+   "credit": 3,
+   "professor": "황주영",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00152-01"
+  },
+  {
+   "code": "AK00191",
+   "section": "01",
+   "name": "만화로문화다양성읽기",
+   "credit": 3,
+   "professor": "송하원",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – SEED – 다양성과 미래사회 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "3501"
+    }
+   ],
+   "id": "AK00191-01"
+  },
+  {
+   "code": "AD00042",
+   "section": "01",
+   "name": "논리와 비판적 사고",
+   "credit": 3,
+   "professor": "김시형",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7208"
+    }
+   ],
+   "id": "AD00042-01"
+  },
+  {
+   "code": "AD00105",
+   "section": "01",
+   "name": "온라인 게임과 종교적 상징",
+   "credit": 3,
+   "professor": "김한나",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7107"
+    }
+   ],
+   "id": "AD00105-01"
+  },
+  {
+   "code": "AE00099",
+   "section": "01",
+   "name": "마음",
+   "credit": 3,
+   "professor": "남일성",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7303"
+    }
+   ],
+   "id": "AE00099-01"
+  },
+  {
+   "code": "AK00097",
+   "section": "01",
+   "name": "인간관계심리와대인관계기술",
+   "credit": 3,
+   "professor": "최수빈",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7208"
+    }
+   ],
+   "id": "AK00097-01"
+  },
+  {
+   "code": "AK00102",
+   "section": "01",
+   "name": "동양의 사유",
+   "credit": 3,
+   "professor": "최성호",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00102-01"
+  },
+  {
+   "code": "AK00187",
+   "section": "01",
+   "name": "축의시대:철학과종교의탄생",
+   "credit": 3,
+   "professor": "김기명",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "3301"
+    }
+   ],
+   "id": "AK00187-01"
+  },
+  {
+   "code": "AK00188",
+   "section": "01",
+   "name": "정신건강과자기돌봄",
+   "credit": 3,
+   "professor": "이현아",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00188-01"
+  },
+  {
+   "code": "AK00189",
+   "section": "01",
+   "name": "행동변화와자기관리",
+   "credit": 3,
+   "professor": "이현아",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00189-01"
+  },
+  {
+   "code": "AU00004",
+   "section": "01",
+   "name": "예술심리치료의 이해",
+   "credit": 3,
+   "professor": "윤라미",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 인간과 종교 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7107"
+    }
+   ],
+   "id": "AU00004-01"
+  },
+  {
+   "code": "AD00127",
+   "section": "01",
+   "name": "미술과 상상력",
+   "credit": 3,
+   "professor": "이은주",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7107"
+    }
+   ],
+   "id": "AD00127-01"
+  },
+  {
+   "code": "AD00172",
+   "section": "01",
+   "name": "더불어숲인문학 (삶을 위한 인문공부)",
+   "credit": 3,
+   "professor": "고병헌",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7208"
+    }
+   ],
+   "id": "AD00172-01"
+  },
+  {
+   "code": "AK00013",
+   "section": "01",
+   "name": "현대문학톺아읽기",
+   "credit": 3,
+   "professor": "오현화",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "1506"
+    }
+   ],
+   "id": "AK00013-01"
+  },
+  {
+   "code": "AK00019",
+   "section": "01",
+   "name": "더불어숲인문학 (문학속문화읽기)",
+   "credit": 3,
+   "professor": "오현화",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "7107"
+    }
+   ],
+   "id": "AK00019-01"
+  },
+  {
+   "code": "AK00104",
+   "section": "01",
+   "name": "사랑과연애의사회사",
+   "credit": 3,
+   "professor": "김영선",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "3501"
+    }
+   ],
+   "id": "AK00104-01"
+  },
+  {
+   "code": "AK00149",
+   "section": "01",
+   "name": "엔터테인먼트산업의이해",
+   "credit": 3,
+   "professor": "김현희",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "M301"
+    }
+   ],
+   "id": "AK00149-01"
+  },
+  {
+   "code": "AK00150",
+   "section": "01",
+   "name": "신화와감성:오페라,영화,회화 로읽는인간이야기",
+   "credit": 3,
+   "professor": "차피득",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "7208"
+    }
+   ],
+   "id": "AK00150-01"
+  },
+  {
+   "code": "AK00151",
+   "section": "01",
+   "name": "스피치의이해",
+   "credit": 3,
+   "professor": "고재균",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00151-01"
+  },
+  {
+   "code": "AK00154",
+   "section": "01",
+   "name": "문화교양강독",
+   "credit": 3,
+   "professor": "전성원",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "1506"
+    }
+   ],
+   "id": "AK00154-01"
+  },
+  {
+   "code": "AK00186",
+   "section": "01",
+   "name": "어제의인문학",
+   "credit": 3,
+   "professor": "김기명",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00186-01"
+  },
+  {
+   "code": "AK00197",
+   "section": "01",
+   "name": "스피치와디베이트",
+   "credit": 3,
+   "professor": "이상철",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 문학 문화 예술 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "3401"
+    }
+   ],
+   "id": "AK00197-01"
+  },
+  {
+   "code": "AD00003",
+   "section": "01",
+   "name": "기초일본어",
+   "credit": 3,
+   "professor": "요코야마나호코",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "1505"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "1505"
+    }
+   ],
+   "id": "AD00003-01"
+  },
+  {
+   "code": "AD00004",
+   "section": "01",
+   "name": "실용 일본어",
+   "credit": 3,
+   "professor": "요코야마나호코",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 795,
+     "room": "1505"
+    },
+    {
+     "day": "수",
+     "start": 720,
+     "end": 795,
+     "room": "1505"
+    }
+   ],
+   "id": "AD00004-01"
+  },
+  {
+   "code": "AD00010",
+   "section": "01",
+   "name": "서양사의 이해",
+   "credit": 3,
+   "professor": "한해정",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7208"
+    }
+   ],
+   "id": "AD00010-01"
+  },
+  {
+   "code": "AD00109",
+   "section": "01",
+   "name": "기초영문법 II",
+   "credit": 3,
+   "professor": "김성찬",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7306"
+    }
+   ],
+   "id": "AD00109-01"
+  },
+  {
+   "code": "AK00017",
+   "section": "01",
+   "name": "동아시아역사와문화",
+   "credit": 3,
+   "professor": "심용환",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "M205"
+    }
+   ],
+   "id": "AK00017-01"
+  },
+  {
+   "code": "AK00020",
+   "section": "01",
+   "name": "세계음식과역사",
+   "credit": 3,
+   "professor": "홍서연",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "3301"
+    }
+   ],
+   "id": "AK00020-01"
+  },
+  {
+   "code": "AK00098",
+   "section": "01",
+   "name": "중동분쟁과이슬람인권",
+   "credit": 3,
+   "professor": "이희수, 조정현",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7208"
+    }
+   ],
+   "id": "AK00098-01"
+  },
+  {
+   "code": "AK00100",
+   "section": "01",
+   "name": "교양스페인어",
+   "credit": 3,
+   "professor": "유현정",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7208"
+    }
+   ],
+   "id": "AK00100-01"
+  },
+  {
+   "code": "AK00212",
+   "section": "01",
+   "name": "세상을바꾼기술",
+   "credit": 3,
+   "professor": "김명진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "3501"
+    }
+   ],
+   "id": "AK00212-01"
+  },
+  {
+   "code": "AK00029",
+   "section": "01",
+   "name": "남과북,밥·꿈·칼의100년전쟁",
+   "credit": 3,
+   "professor": "한홍구",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "미래혁신교육 – 일반교양선택 – 지역과 세계 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "M205"
+    }
+   ],
+   "id": "AK00029-01"
+  },
+  {
+   "code": "AD00033",
+   "section": "01",
+   "name": "대학합창II",
+   "credit": 3,
+   "professor": "차피득",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 정서적 체험 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "9301"
+    }
+   ],
+   "id": "AD00033-01"
+  },
+  {
+   "code": "AD00193",
+   "section": "01",
+   "name": "실용음악의 이해와 감상Ⅱ (대중음악)",
+   "credit": 2,
+   "professor": "하지원",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 정서적 체험 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1010,
+     "room": "7107"
+    }
+   ],
+   "id": "AD00193-01"
+  },
+  {
+   "code": "AD00162",
+   "section": "01",
+   "name": "사교무용-탱고",
+   "credit": 2,
+   "professor": "장소정",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 신체적 체험 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 830,
+     "room": "5C301"
+    }
+   ],
+   "id": "AD00162-01"
+  },
+  {
+   "code": "AK00021",
+   "section": "01",
+   "name": "요가",
+   "credit": 1,
+   "professor": "하지혜",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 신체적 체험 하위영역",
+   "times": [
+    {
+     "day": "금",
+     "start": 780,
+     "end": 830,
+     "room": "5C301"
+    }
+   ],
+   "id": "AK00021-01"
+  },
+  {
+   "code": "AK00021",
+   "section": "02",
+   "name": "요가",
+   "credit": 1,
+   "professor": "하지혜",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 신체적 체험 하위영역",
+   "times": [
+    {
+     "day": "금",
+     "start": 840,
+     "end": 890,
+     "room": "5C301"
+    }
+   ],
+   "id": "AK00021-02"
+  },
+  {
+   "code": "AK00021",
+   "section": "03",
+   "name": "요가",
+   "credit": 1,
+   "professor": "하지혜",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 신체적 체험 하위영역",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 950,
+     "room": "5C301"
+    }
+   ],
+   "id": "AK00021-03"
+  },
+  {
+   "code": "AK00193",
+   "section": "01",
+   "name": "생활달리기",
+   "credit": 2,
+   "professor": "박유진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 신체적 체험 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 650,
+     "room": "1503"
+    }
+   ],
+   "id": "AK00193-01"
+  },
+  {
+   "code": "AK00196",
+   "section": "01",
+   "name": "모두의그라운드:축구",
+   "credit": 2,
+   "professor": "김동혁",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 신체적 체험 하위영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 830,
+     "room": "1503"
+    }
+   ],
+   "id": "AK00196-01"
+  },
+  {
+   "code": "AK00080",
+   "section": "01",
+   "name": "대학생사회공헌프로젝트2",
+   "credit": 3,
+   "professor": "임정아",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 사회적 체험 하위영역",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "M404"
+    }
+   ],
+   "id": "AK00080-01"
+  },
+  {
+   "code": "AH00022",
+   "section": "01",
+   "name": "진로탐색과 자기계발",
+   "credit": 2,
+   "professor": "한상진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 창업과 특허/취업 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1010,
+     "room": "7208"
+    }
+   ],
+   "id": "AH00022-01"
+  },
+  {
+   "code": "AH00056",
+   "section": "01",
+   "name": "창업과 지식재산",
+   "credit": 2,
+   "professor": "류선미",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 창업과 특허/취업 하위영역",
+   "times": [
+    {
+     "day": "화",
+     "start": 600,
+     "end": 710,
+     "room": "7208"
+    }
+   ],
+   "id": "AH00056-01"
+  },
+  {
+   "code": "AK00153",
+   "section": "01",
+   "name": "직업으로서의시민사회활동",
+   "credit": 3,
+   "professor": "박경주",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 창업과 특허/취업 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "3301"
+    }
+   ],
+   "id": "AK00153-01"
+  },
+  {
+   "code": "AK00211",
+   "section": "01",
+   "name": "스타트업인사이트:쉽게배우는아이 2026-2학기 교과목변경과목 디어실전워크숍 (대체: 스타트업비즈니스전략 수립)",
+   "credit": 3,
+   "professor": "최우진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "소양교육 – 창업과 특허/취업 하위영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "1504"
+    }
+   ],
+   "id": "AK00211-01"
+  },
+  {
+   "code": "AK00113",
+   "section": "01",
+   "name": "비아메디아채플:그리스도교와세계",
+   "credit": 1,
+   "professor": "이종민",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 770,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00113-01"
+  },
+  {
+   "code": "AK00113",
+   "section": "02",
+   "name": "비아메디아채플:그리스도교와세계",
+   "credit": 1,
+   "professor": "이종민",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 780,
+     "end": 830,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00113-02"
+  },
+  {
+   "code": "AK00113",
+   "section": "03",
+   "name": "비아메디아채플:그리스도교와세계",
+   "credit": 1,
+   "professor": "이종민",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 840,
+     "end": 890,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00113-03"
+  },
+  {
+   "code": "AK00113",
+   "section": "04",
+   "name": "비아메디아채플:그리스도교와세계",
+   "credit": 1,
+   "professor": "노철래",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 770,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00113-04"
+  },
+  {
+   "code": "AK00113",
+   "section": "05",
+   "name": "비아메디아채플:그리스도교와세계",
+   "credit": 1,
+   "professor": "노철래",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 780,
+     "end": 830,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00113-05"
+  },
+  {
+   "code": "AK00113",
+   "section": "06",
+   "name": "비아메디아채플:그리스도교와세계",
+   "credit": 1,
+   "professor": "노철래",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 840,
+     "end": 890,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00113-06"
+  },
+  {
+   "code": "AK00114",
+   "section": "01",
+   "name": "비아메디아채플:그리스도교와인간",
+   "credit": 1,
+   "professor": "양승우",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 950,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00114-01"
+  },
+  {
+   "code": "AK00114",
+   "section": "02",
+   "name": "비아메디아채플:그리스도교와인간",
+   "credit": 1,
+   "professor": "양승우",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 960,
+     "end": 1010,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00114-02"
+  },
+  {
+   "code": "AK00114",
+   "section": "03",
+   "name": "비아메디아채플:그리스도교와인간",
+   "credit": 1,
+   "professor": "양승우",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "월",
+     "start": 1020,
+     "end": 1070,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00114-03"
+  },
+  {
+   "code": "AK00114",
+   "section": "04",
+   "name": "비아메디아채플:그리스도교와인간",
+   "credit": 1,
+   "professor": "이해청",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 950,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00114-04"
+  },
+  {
+   "code": "AK00114",
+   "section": "05",
+   "name": "비아메디아채플:그리스도교와인간",
+   "credit": 1,
+   "professor": "이해청",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 960,
+     "end": 1010,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00114-05"
+  },
+  {
+   "code": "AK00114",
+   "section": "06",
+   "name": "비아메디아채플:그리스도교와인간",
+   "credit": 1,
+   "professor": "이해청",
+   "type": "교양필수",
+   "grade": "전체",
+   "category": "소양교육 – 비아메디아 채플 영역",
+   "times": [
+    {
+     "day": "수",
+     "start": 1020,
+     "end": 1070,
+     "room": "3502"
+    }
+   ],
+   "id": "AK00114-06"
+  },
+  {
+   "code": "AK00205",
+   "section": "01",
+   "name": "서울의역사와도시문화의이해B",
+   "credit": 3,
+   "professor": "신유진",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "국제학부 공동 개설 교양과목",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "M404"
+    }
+   ],
+   "id": "AK00205-01"
+  },
+  {
+   "code": "AK00209",
+   "section": "01",
+   "name": "미디어와한국문화B",
+   "credit": 3,
+   "professor": "최원정",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "국제학부 공동 개설 교양과목",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "M205"
+    }
+   ],
+   "id": "AK00209-01"
+  },
+  {
+   "code": "AK00207",
+   "section": "01",
+   "name": "20대를위한심리A",
+   "credit": 3,
+   "professor": "이현아",
+   "type": "교양선택",
+   "grade": "전체",
+   "category": "국제학부 공동 개설 교양과목",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "M205"
+    }
+   ],
+   "id": "AK00207-01"
+  },
+  {
+   "code": "AD00124",
+   "section": "01",
+   "name": "문화예술교육론",
+   "credit": 3,
+   "professor": "신재민",
+   "type": "평생교육",
+   "grade": "2,3,4",
+   "category": "평생교육사과정",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "M406"
+    }
+   ],
+   "id": "AD00124-01"
+  },
+  {
+   "code": "AG00003",
+   "section": "01",
+   "name": "평생교육실습",
+   "credit": 3,
+   "professor": "임정아",
+   "type": "평생교육",
+   "grade": "3,4",
+   "category": "평생교육사과정",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "1504"
+    }
+   ],
+   "id": "AG00003-01"
+  },
+  {
+   "code": "AG00013",
+   "section": "01",
+   "name": "평생교육경영학",
+   "credit": 3,
+   "professor": "정혜령",
+   "type": "평생교육",
+   "grade": "2,3,4",
+   "category": "평생교육사과정",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7305"
+    }
+   ],
+   "id": "AG00013-01"
+  },
+  {
+   "code": "AG00015",
+   "section": "01",
+   "name": "평생교육프로그램개발",
+   "credit": 3,
+   "professor": "임정아",
+   "type": "평생교육",
+   "grade": "2,3,4",
+   "category": "평생교육사과정",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "1505"
+    }
+   ],
+   "id": "AG00015-01"
+  },
+  {
+   "code": "AG00016",
+   "section": "01",
+   "name": "청소년교육론",
+   "credit": 3,
+   "professor": "정혜령",
+   "type": "평생교육",
+   "grade": "2,3,4",
+   "category": "평생교육사과정",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "1503"
+    }
+   ],
+   "id": "AG00016-01"
+  },
+  {
+   "code": "AK00138",
+   "section": "01",
+   "name": "노인교육론",
+   "credit": 3,
+   "professor": "고병헌",
+   "type": "평생교육",
+   "grade": "2,3,4",
+   "category": "평생교육사과정",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "7204"
+    }
+   ],
+   "id": "AK00138-01"
+  },
+  {
+   "code": "BH00002",
+   "section": "01",
+   "name": "일본의이해",
+   "credit": 3,
+   "professor": "김아름",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 인문융합콘텐츠학부(인문융합자율학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "7107"
+    }
+   ],
+   "id": "BH00002-01"
+  },
+  {
+   "code": "BH00005",
+   "section": "01",
+   "name": "네이티브일본어회화",
+   "credit": 3,
+   "professor": "요코야마나호코",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 인문융합콘텐츠학부(인문융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "7202"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "7202"
+    }
+   ],
+   "id": "BH00005-01"
+  },
+  {
+   "code": "BH00006",
+   "section": "01",
+   "name": "쉽게배우는중국어",
+   "credit": 3,
+   "professor": "장엽",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 인문융합콘텐츠학부(인문융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7305"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7305"
+    }
+   ],
+   "id": "BH00006-01"
+  },
+  {
+   "code": "BH00007",
+   "section": "01",
+   "name": "키워드로본오늘의중국",
+   "credit": 3,
+   "professor": "이남주",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 인문융합콘텐츠학부(인문융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "7306"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "7306"
+    }
+   ],
+   "id": "BH00007-01"
+  },
+  {
+   "code": "BH00008",
+   "section": "01",
+   "name": "English Pronunciation",
+   "credit": 3,
+   "professor": "김혜인",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 인문융합콘텐츠학부(인문융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "7305"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "7305"
+    }
+   ],
+   "id": "BH00008-01"
+  },
+  {
+   "code": "BH00013",
+   "section": "01",
+   "name": "과학카페에서읽는종교",
+   "credit": 3,
+   "professor": "신익상",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 인문융합콘텐츠학부(인문융합자율학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "1505"
+    }
+   ],
+   "id": "BH00013-01"
+  },
+  {
+   "code": "BS00005",
+   "section": "01",
+   "name": "사회복지학개론",
+   "credit": 3,
+   "professor": "이동림",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "3502"
+    }
+   ],
+   "id": "BS00005-01"
+  },
+  {
+   "code": "BS00007",
+   "section": "01",
+   "name": "사회복지와인권",
+   "credit": 3,
+   "professor": "양경은",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7309"
+    }
+   ],
+   "id": "BS00007-01"
+  },
+  {
+   "code": "BS00006",
+   "section": "01",
+   "name": "사회학의초대",
+   "credit": 3,
+   "professor": "강성현",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "7202"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "7202"
+    }
+   ],
+   "id": "BS00006-01"
+  },
+  {
+   "code": "BS00011",
+   "section": "01",
+   "name": "사회학글쓰기입문",
+   "credit": 3,
+   "professor": "황준서",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "7207"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "7207"
+    }
+   ],
+   "id": "BS00011-01"
+  },
+  {
+   "code": "BS00012",
+   "section": "01",
+   "name": "경제로보는문화",
+   "credit": 3,
+   "professor": "신현준",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 990,
+     "end": 1065,
+     "room": "7202"
+    },
+    {
+     "day": "수",
+     "start": 990,
+     "end": 1065,
+     "room": "7202"
+    }
+   ],
+   "id": "BS00012-01"
+  },
+  {
+   "code": "BS00008",
+   "section": "01",
+   "name": "정치학의초대",
+   "credit": 3,
+   "professor": "윤석준",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "7207"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "7207"
+    }
+   ],
+   "id": "BS00008-01"
+  },
+  {
+   "code": "BS00014",
+   "section": "01",
+   "name": "비교정치의이해",
+   "credit": 3,
+   "professor": "김태경",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 사회융합학부(사회융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7207"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7207"
+    }
+   ],
+   "id": "BS00014-01"
+  },
+  {
+   "code": "BM00006",
+   "section": "01",
+   "name": "기초회계",
+   "credit": 3,
+   "professor": "김용미",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 경영학부",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "1505"
+    }
+   ],
+   "id": "BM00006-01"
+  },
+  {
+   "code": "BM00002",
+   "section": "01",
+   "name": "경제환경과기업경영",
+   "credit": 3,
+   "professor": "이웅",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 경영학부",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7207"
+    }
+   ],
+   "id": "BM00002-01"
+  },
+  {
+   "code": "BD00005",
+   "section": "01",
+   "name": "민주주의와저널리즘",
+   "credit": 3,
+   "professor": "윤장열",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미디어콘텐츠융합학부(미디어콘텐츠융합자율학부)",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "7308"
+    }
+   ],
+   "id": "BD00005-01"
+  },
+  {
+   "code": "BD00006",
+   "section": "01",
+   "name": "영상크리에이티브기초",
+   "credit": 3,
+   "professor": "연희승",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미디어콘텐츠융합학부(미디어콘텐츠융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "M401"
+    }
+   ],
+   "id": "BD00006-01"
+  },
+  {
+   "code": "BD00007",
+   "section": "01",
+   "name": "21세기세계문화의이해",
+   "credit": 3,
+   "professor": "정윤수",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미디어콘텐츠융합학부(미디어콘텐츠융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 795,
+     "room": "7308"
+    },
+    {
+     "day": "수",
+     "start": 720,
+     "end": 795,
+     "room": "7308"
+    }
+   ],
+   "id": "BD00007-01"
+  },
+  {
+   "code": "BD00009",
+   "section": "01",
+   "name": "디자인언포게터블캐릭터",
+   "credit": 3,
+   "professor": "이원정",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미디어콘텐츠융합학부(미디어콘텐츠융합자율학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "6110"
+    }
+   ],
+   "id": "BD00009-01"
+  },
+  {
+   "code": "BD00011",
+   "section": "01",
+   "name": "영상커뮤니케이션의이해",
+   "credit": 3,
+   "professor": "최영묵",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미디어콘텐츠융합학부(미디어콘텐츠융합자율학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "1505"
+    }
+   ],
+   "id": "BD00011-01"
+  },
+  {
+   "code": "BD00013",
+   "section": "01",
+   "name": "설득과공감의마법,디지털콘텐츠발상 과표현",
+   "credit": 3,
+   "professor": "이종승",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미디어콘텐츠융합학부(미디어콘텐츠융합자율학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "6110"
+    }
+   ],
+   "id": "BD00013-01"
+  },
+  {
+   "code": "BI00002",
+   "section": "01",
+   "name": "웹개발입문",
+   "credit": 3,
+   "professor": "김덕봉",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "6201"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "6201"
+    }
+   ],
+   "id": "BI00002-01"
+  },
+  {
+   "code": "BI00002",
+   "section": "02",
+   "name": "웹개발입문",
+   "credit": 3,
+   "professor": "김덕봉",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "6201"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "6201"
+    }
+   ],
+   "id": "BI00002-02"
+  },
+  {
+   "code": "BI00002",
+   "section": "03",
+   "name": "웹개발입문",
+   "credit": 3,
+   "professor": "이해신",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "6202"
+    }
+   ],
+   "id": "BI00002-03"
+  },
+  {
+   "code": "BI00003",
+   "section": "01",
+   "name": "공업수학",
+   "credit": 3,
+   "professor": "윤명호",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "3301"
+    }
+   ],
+   "id": "BI00003-01"
+  },
+  {
+   "code": "BI00004",
+   "section": "01",
+   "name": "Python프로그래밍",
+   "credit": 3,
+   "professor": "홍은지",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "6206"
+    }
+   ],
+   "id": "BI00004-01"
+  },
+  {
+   "code": "BI00004",
+   "section": "02",
+   "name": "Python프로그래밍",
+   "credit": 3,
+   "professor": "홍은지",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "6206"
+    }
+   ],
+   "id": "BI00004-02"
+  },
+  {
+   "code": "BI00004",
+   "section": "03",
+   "name": "Python프로그래밍",
+   "credit": 3,
+   "professor": "이하규",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 소프트웨어융합학부(IT융합자율학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "6406"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "6406"
+    }
+   ],
+   "id": "BI00004-03"
+  },
+  {
+   "code": "BF00005",
+   "section": "01",
+   "name": "인공지능입문",
+   "credit": 3,
+   "professor": "공준욱",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미래융합학부",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "6206"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "6206"
+    }
+   ],
+   "id": "BF00005-01"
+  },
+  {
+   "code": "BF00002",
+   "section": "01",
+   "name": "Python프로그래밍",
+   "credit": 3,
+   "professor": "공준욱",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미래융합학부",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "6405"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "6405"
+    }
+   ],
+   "id": "BF00002-01"
+  },
+  {
+   "code": "BF00003",
+   "section": "01",
+   "name": "빅데이터이론과실제",
+   "credit": 3,
+   "professor": "김수림",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미래융합학부",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7205"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7205"
+    }
+   ],
+   "id": "BF00003-01"
+  },
+  {
+   "code": "BF00004",
+   "section": "01",
+   "name": "빅데이터활용및실습",
+   "credit": 3,
+   "professor": "김양희",
+   "type": "전공탐색",
+   "grade": "1",
+   "category": "전공탐색 – 미래융합학부",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "3302"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "3302"
+    }
+   ],
+   "id": "BF00004-01"
+  },
+  {
+   "code": "HR00005",
+   "section": "01",
+   "name": "인공지능시대의종교와미디어의미래",
+   "credit": 3,
+   "professor": "7201",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "종교와신학(기독교문화)전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "7201"
+    }
+   ],
+   "id": "HR00005-01"
+  },
+  {
+   "code": "HR00007",
+   "section": "01",
+   "name": "종교와사회복지",
+   "credit": 3,
+   "professor": "7201",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "종교와신학(기독교문화)전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7201"
+    }
+   ],
+   "id": "HR00007-01"
+  },
+  {
+   "code": "HR00010",
+   "section": "01",
+   "name": "공감",
+   "credit": 3,
+   "professor": "신익상",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "종교와신학(기독교문화)전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7201"
+    }
+   ],
+   "id": "HR00010-01"
+  },
+  {
+   "code": "HR00015",
+   "section": "01",
+   "name": "그리스도교의역사와사상:근대와현대 의신학",
+   "credit": 3,
+   "professor": "강안일",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "종교와신학(기독교문화)전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "7201"
+    }
+   ],
+   "id": "HR00015-01"
+  },
+  {
+   "code": "HR00025",
+   "section": "01",
+   "name": "성서와고대신화",
+   "credit": 3,
+   "professor": "이해청",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "종교와신학(기독교문화)전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7201"
+    }
+   ],
+   "id": "HR00025-01"
+  },
+  {
+   "code": "HR00026",
+   "section": "01",
+   "name": "다종교시대의신학과영성",
+   "credit": 3,
+   "professor": "7201",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "종교와신학(기독교문화)전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7201"
+    }
+   ],
+   "id": "HR00026-01"
+  },
+  {
+   "code": "HE00001",
+   "section": "01",
+   "name": "영화로 읽는 셰익스피어",
+   "credit": 3,
+   "professor": "진영종",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00001-01"
+  },
+  {
+   "code": "HE00002",
+   "section": "01",
+   "name": "영어독서지도",
+   "credit": 2,
+   "professor": "김성찬",
+   "type": "전공필수",
+   "grade": "4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 830,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00002-01"
+  },
+  {
+   "code": "HE00003",
+   "section": "01",
+   "name": "영어문장이해II",
+   "credit": 3,
+   "professor": "김성찬",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "M205"
+    }
+   ],
+   "id": "HE00003-01"
+  },
+  {
+   "code": "HE00004",
+   "section": "01",
+   "name": "영미문학: 자연과 인간",
+   "credit": 3,
+   "professor": "조병은",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00004-01"
+  },
+  {
+   "code": "HE00005",
+   "section": "01",
+   "name": "미국문화와 사회",
+   "credit": 3,
+   "professor": "박미정",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00005-01"
+  },
+  {
+   "code": "HE00006",
+   "section": "01",
+   "name": "영어다독II",
+   "credit": 3,
+   "professor": "김혜인",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00006-01"
+  },
+  {
+   "code": "HE00006",
+   "section": "02",
+   "name": "영어다독II",
+   "credit": 3,
+   "professor": "김혜인",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00006-02"
+  },
+  {
+   "code": "HE00007",
+   "section": "01",
+   "name": "영어로 읽는 한국 2",
+   "credit": 3,
+   "professor": "박미정",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00007-01"
+  },
+  {
+   "code": "HE00008",
+   "section": "01",
+   "name": "영어교수법및학습법 II",
+   "credit": 3,
+   "professor": "김성찬",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "7616"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00008-01"
+  },
+  {
+   "code": "HE00009",
+   "section": "01",
+   "name": "서양문학의 흐름",
+   "credit": 3,
+   "professor": "박미정",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "3401"
+    }
+   ],
+   "id": "HE00009-01"
+  },
+  {
+   "code": "HE00023",
+   "section": "01",
+   "name": "영어발달사",
+   "credit": 3,
+   "professor": "김성찬",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7616"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7616"
+    }
+   ],
+   "id": "HE00023-01"
+  },
+  {
+   "code": "HE00024",
+   "section": "01",
+   "name": "영작문2",
+   "credit": 3,
+   "professor": "김혜인",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "7305"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "7305"
+    }
+   ],
+   "id": "HE00024-01"
+  },
+  {
+   "code": "HE00026",
+   "section": "01",
+   "name": "영어다의어2:알맹이와껍데기",
+   "credit": 3,
+   "professor": "권용현",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영어학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "9990"
+    }
+   ],
+   "id": "HE00026-01"
+  },
+  {
+   "code": "HJ00002",
+   "section": "01",
+   "name": "스크린일본어",
+   "credit": 3,
+   "professor": "요코야마나호코",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "7202"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "7202"
+    }
+   ],
+   "id": "HJ00002-01"
+  },
+  {
+   "code": "HJ00003",
+   "section": "01",
+   "name": "일본근현대문학의 이해",
+   "credit": 3,
+   "professor": "박은희",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00003-01"
+  },
+  {
+   "code": "HJ00004",
+   "section": "01",
+   "name": "일본근현대사",
+   "credit": 3,
+   "professor": "김남은",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00004-01"
+  },
+  {
+   "code": "HJ00005",
+   "section": "01",
+   "name": "일본어표현연습",
+   "credit": 3,
+   "professor": "요코야마나호코",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "7304"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00005-01"
+  },
+  {
+   "code": "HJ00009",
+   "section": "01",
+   "name": "일본학세미나",
+   "credit": 3,
+   "professor": "김아름",
+   "type": "전공필수",
+   "grade": "3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00009-01"
+  },
+  {
+   "code": "HJ00020",
+   "section": "01",
+   "name": "일본사회론",
+   "credit": 3,
+   "professor": "권연이",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 830,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00020-01"
+  },
+  {
+   "code": "HJ00022",
+   "section": "01",
+   "name": "한일문화콘텐츠통번역2",
+   "credit": 3,
+   "professor": "박혜윤",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00022-01"
+  },
+  {
+   "code": "HJ00024",
+   "section": "01",
+   "name": "일본원서 강독3",
+   "credit": 3,
+   "professor": "김아름",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00024-01"
+  },
+  {
+   "code": "HJ00028",
+   "section": "01",
+   "name": "일본관광서비스캡스톤디자인",
+   "credit": 3,
+   "professor": "최나리",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00028-01"
+  },
+  {
+   "code": "HJ00029",
+   "section": "01",
+   "name": "일본고중세사",
+   "credit": 3,
+   "professor": "김건우",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00029-01"
+  },
+  {
+   "code": "HJ00030",
+   "section": "01",
+   "name": "일본기업론",
+   "credit": 3,
+   "professor": "김아름",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "일어일본학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7304"
+    }
+   ],
+   "id": "HJ00030-01"
+  },
+  {
+   "code": "HC00002",
+   "section": "01",
+   "name": "중국고전을 읽다",
+   "credit": 3,
+   "professor": "백원담",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7306"
+    }
+   ],
+   "id": "HC00002-01"
+  },
+  {
+   "code": "HC00003",
+   "section": "01",
+   "name": "중국어회화Ⅲ",
+   "credit": 3,
+   "professor": "장엽",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00003-01"
+  },
+  {
+   "code": "HC00004",
+   "section": "01",
+   "name": "중국문화산업",
+   "credit": 3,
+   "professor": "윤영도",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "7301"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00004-01"
+  },
+  {
+   "code": "HC00005",
+   "section": "01",
+   "name": "중국어 회화I",
+   "credit": 3,
+   "professor": "장엽",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "7301"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00005-01"
+  },
+  {
+   "code": "HC00006",
+   "section": "01",
+   "name": "중국의 경제정책",
+   "credit": 3,
+   "professor": "이남주",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7301"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00006-01"
+  },
+  {
+   "code": "HC00008",
+   "section": "01",
+   "name": "중국어 작문 연습",
+   "credit": 3,
+   "professor": "장엽",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00008-01"
+  },
+  {
+   "code": "HC00009",
+   "section": "01",
+   "name": "중국사회사정",
+   "credit": 3,
+   "professor": "장영석",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00009-01"
+  },
+  {
+   "code": "HC00019",
+   "section": "01",
+   "name": "실용중국어",
+   "credit": 3,
+   "professor": "김미란",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 990,
+     "end": 1065,
+     "room": "7301"
+    },
+    {
+     "day": "수",
+     "start": 990,
+     "end": 1065,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00019-01"
+  },
+  {
+   "code": "HC00020",
+   "section": "01",
+   "name": "중국학융합캡스톤디자인",
+   "credit": 3,
+   "professor": "윤영도",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "7301"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00020-01"
+  },
+  {
+   "code": "HC00021",
+   "section": "01",
+   "name": "현대중국문화읽기",
+   "credit": 3,
+   "professor": "김미란",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "중어중국학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "7301"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "7301"
+    }
+   ],
+   "id": "HC00021-01"
+  },
+  {
+   "code": "SW00001",
+   "section": "01",
+   "name": "아동복지론",
+   "credit": 3,
+   "professor": "양경은",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00001-01"
+  },
+  {
+   "code": "SW00002",
+   "section": "01",
+   "name": "정신건강론",
+   "credit": 3,
+   "professor": "서진환",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7202"
+    }
+   ],
+   "id": "SW00002-01"
+  },
+  {
+   "code": "SW00003",
+   "section": "01",
+   "name": "노인복지론",
+   "credit": 3,
+   "professor": "남일성",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 990,
+     "end": 1065,
+     "room": "7309"
+    },
+    {
+     "day": "수",
+     "start": 990,
+     "end": 1065,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00003-01"
+  },
+  {
+   "code": "SW00004",
+   "section": "01",
+   "name": "장애인복지론",
+   "credit": 3,
+   "professor": "김용득",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00004-01"
+  },
+  {
+   "code": "SW00006",
+   "section": "01",
+   "name": "복지국가론",
+   "credit": 3,
+   "professor": "김연아",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "3301"
+    }
+   ],
+   "id": "SW00006-01"
+  },
+  {
+   "code": "SW00007",
+   "section": "01",
+   "name": "사회복지자료분석론",
+   "credit": 3,
+   "professor": "정원오",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "B105"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "B105"
+    }
+   ],
+   "id": "SW00007-01"
+  },
+  {
+   "code": "SW00008",
+   "section": "01",
+   "name": "빈곤론",
+   "credit": 3,
+   "professor": "정원오",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7202"
+    }
+   ],
+   "id": "SW00008-01"
+  },
+  {
+   "code": "SW00010",
+   "section": "01",
+   "name": "사회보장론",
+   "credit": 3,
+   "professor": "손다진",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "1504"
+    }
+   ],
+   "id": "SW00010-01"
+  },
+  {
+   "code": "SW00023",
+   "section": "01",
+   "name": "사회복지현장실습",
+   "credit": 3,
+   "professor": "서진환",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "토",
+     "start": 540,
+     "end": 710,
+     "room": "9990"
+    }
+   ],
+   "id": "SW00023-01"
+  },
+  {
+   "code": "SW00024",
+   "section": "01",
+   "name": "인간행동과사회환경",
+   "credit": 3,
+   "professor": "남일성",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "7309"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00024-01"
+  },
+  {
+   "code": "SW00025",
+   "section": "01",
+   "name": "사회복지조사론",
+   "credit": 3,
+   "professor": "김형돈",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "7309"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00025-01"
+  },
+  {
+   "code": "SW00026",
+   "section": "01",
+   "name": "사회복지실천론",
+   "credit": 3,
+   "professor": "김용득",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7309"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00026-01"
+  },
+  {
+   "code": "SW00027",
+   "section": "01",
+   "name": "사회복지실천기술론",
+   "credit": 3,
+   "professor": "박정환",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00027-01"
+  },
+  {
+   "code": "SW00028",
+   "section": "01",
+   "name": "사회복지정책론",
+   "credit": 3,
+   "professor": "정원오",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00028-01"
+  },
+  {
+   "code": "SW00029",
+   "section": "01",
+   "name": "지역사회복지론",
+   "credit": 3,
+   "professor": "최정태",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "7202"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "7202"
+    }
+   ],
+   "id": "SW00029-01"
+  },
+  {
+   "code": "SW00030",
+   "section": "01",
+   "name": "사회복지행정론",
+   "credit": 3,
+   "professor": "황인매",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00030-01"
+  },
+  {
+   "code": "SW00031",
+   "section": "01",
+   "name": "사회복지법제와실천",
+   "credit": 2,
+   "professor": "박보은",
+   "type": "전공선택",
+   "grade": "2.3.4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00031-01"
+  },
+  {
+   "code": "SW00032",
+   "section": "01",
+   "name": "사회복지와사회적기업",
+   "credit": 3,
+   "professor": "김형돈",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 795,
+     "room": "7309"
+    },
+    {
+     "day": "수",
+     "start": 720,
+     "end": 795,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00032-01"
+  },
+  {
+   "code": "SW00035",
+   "section": "01",
+   "name": "청소년복지론",
+   "credit": 3,
+   "professor": "최정태",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회복지학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "7309"
+    }
+   ],
+   "id": "SW00035-01"
+  },
+  {
+   "code": "SG00003",
+   "section": "01",
+   "name": "젠더사회학",
+   "credit": 3,
+   "professor": "정연보",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00003-01"
+  },
+  {
+   "code": "SG00004",
+   "section": "01",
+   "name": "사회학개론",
+   "credit": 3,
+   "professor": "박상희",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "7309"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "7309"
+    }
+   ],
+   "id": "SG00004-01"
+  },
+  {
+   "code": "SG00005",
+   "section": "01",
+   "name": "역사사회학",
+   "credit": 3,
+   "professor": "오유석",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00005-01"
+  },
+  {
+   "code": "SG00008",
+   "section": "01",
+   "name": "환경과사회",
+   "credit": 3,
+   "professor": "황준서",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00008-01"
+  },
+  {
+   "code": "SG00009",
+   "section": "01",
+   "name": "사회과학방법론의이해",
+   "credit": 3,
+   "professor": "김진업",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00009-01"
+  },
+  {
+   "code": "SG00011",
+   "section": "01",
+   "name": "글로벌사회학",
+   "credit": 3,
+   "professor": "이태정",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00011-01"
+  },
+  {
+   "code": "SG00018",
+   "section": "01",
+   "name": "몸의사회학",
+   "credit": 3,
+   "professor": "정연보",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00018-01"
+  },
+  {
+   "code": "SG00021",
+   "section": "01",
+   "name": "교육과사회",
+   "credit": 3,
+   "professor": "김훈태",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "1504"
+    }
+   ],
+   "id": "SG00021-01"
+  },
+  {
+   "code": "SG00025",
+   "section": "01",
+   "name": "인공지능과사회",
+   "credit": 3,
+   "professor": "최석현",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "1504"
+    }
+   ],
+   "id": "SG00025-01"
+  },
+  {
+   "code": "SG00026",
+   "section": "01",
+   "name": "다양성과소수자",
+   "credit": 3,
+   "professor": "박경태",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7207"
+    }
+   ],
+   "id": "SG00026-01"
+  },
+  {
+   "code": "SG00029",
+   "section": "01",
+   "name": "동물과인간의사회학",
+   "credit": 3,
+   "professor": "주설아",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "M301"
+    }
+   ],
+   "id": "SG00029-01"
+  },
+  {
+   "code": "SG00032",
+   "section": "01",
+   "name": "난민과이주연구",
+   "credit": 3,
+   "professor": "박상희",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7206"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00032-01"
+  },
+  {
+   "code": "SG00039",
+   "section": "01",
+   "name": "범죄학과폭력사회학",
+   "credit": 3,
+   "professor": "강성현",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "7206"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00039-01"
+  },
+  {
+   "code": "SG00044",
+   "section": "01",
+   "name": "사회사상사",
+   "credit": 3,
+   "professor": "황준서",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "7306"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "7306"
+    }
+   ],
+   "id": "SG00044-01"
+  },
+  {
+   "code": "SG00045",
+   "section": "01",
+   "name": "성스러움과권력의사회학",
+   "credit": 3,
+   "professor": "김현준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "사회학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7206"
+    }
+   ],
+   "id": "SG00045-01"
+  },
+  {
+   "code": "SF00002",
+   "section": "01",
+   "name": "경제학세미나 I",
+   "credit": 3,
+   "professor": "신현준",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7206"
+    }
+   ],
+   "id": "SF00002-01"
+  },
+  {
+   "code": "SF00004",
+   "section": "01",
+   "name": "재정학",
+   "credit": 3,
+   "professor": "이상철",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "7616"
+    }
+   ],
+   "id": "SF00004-01"
+  },
+  {
+   "code": "SF00006",
+   "section": "01",
+   "name": "자본주의의역사",
+   "credit": 3,
+   "professor": "이상철",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7616"
+    }
+   ],
+   "id": "SF00006-01"
+  },
+  {
+   "code": "SF00010",
+   "section": "01",
+   "name": "미시경제학",
+   "credit": 3,
+   "professor": "신현준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "7307"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "7307"
+    }
+   ],
+   "id": "SF00010-01"
+  },
+  {
+   "code": "SF00013",
+   "section": "01",
+   "name": "국제경제론",
+   "credit": 3,
+   "professor": "유철규",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7307"
+    }
+   ],
+   "id": "SF00013-01"
+  },
+  {
+   "code": "SF00017",
+   "section": "01",
+   "name": "경제통계학",
+   "credit": 3,
+   "professor": "임동민",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "7306"
+    }
+   ],
+   "id": "SF00017-01"
+  },
+  {
+   "code": "SF00019",
+   "section": "01",
+   "name": "경제적불평등과해방안",
+   "credit": 3,
+   "professor": "이동한",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경제학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "7206"
+    }
+   ],
+   "id": "SF00019-01"
+  },
+  {
+   "code": "SP00007",
+   "section": "01",
+   "name": "국가론",
+   "credit": 3,
+   "professor": "김태경",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00007-01"
+  },
+  {
+   "code": "SP00014",
+   "section": "01",
+   "name": "한반도평화론",
+   "credit": 3,
+   "professor": "윤석준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00014-01"
+  },
+  {
+   "code": "SP00017",
+   "section": "01",
+   "name": "유럽정치론",
+   "credit": 3,
+   "professor": "윤석준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00017-01"
+  },
+  {
+   "code": "SP00019",
+   "section": "01",
+   "name": "국제개발협력",
+   "credit": 3,
+   "professor": "윤석준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00019-01"
+  },
+  {
+   "code": "SP00024",
+   "section": "01",
+   "name": "국제정치경제",
+   "credit": 3,
+   "professor": "이율빈",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00024-01"
+  },
+  {
+   "code": "SP00028",
+   "section": "01",
+   "name": "비교정치론",
+   "credit": 3,
+   "professor": "김태경",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00028-01"
+  },
+  {
+   "code": "SP00034",
+   "section": "01",
+   "name": "한국정치론",
+   "credit": 3,
+   "professor": "김태심",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00034-01"
+  },
+  {
+   "code": "SP00035",
+   "section": "01",
+   "name": "북한정치론",
+   "credit": 3,
+   "professor": "김태경",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "정치외교학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "7204"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "7204"
+    }
+   ],
+   "id": "SP00035-01"
+  },
+  {
+   "code": "MM00002",
+   "section": "01",
+   "name": "글로벌비지니스의 이해",
+   "credit": 3,
+   "professor": "이은정",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00002-01"
+  },
+  {
+   "code": "MM00003",
+   "section": "01",
+   "name": "경영정보시스템",
+   "credit": 3,
+   "professor": "송재민",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "7202"
+    }
+   ],
+   "id": "MM00003-01"
+  },
+  {
+   "code": "MM00004",
+   "section": "01",
+   "name": "인적자원관리",
+   "credit": 3,
+   "professor": "조수미",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00004-01"
+  },
+  {
+   "code": "MM00005",
+   "section": "01",
+   "name": "기업과사회",
+   "credit": 3,
+   "professor": "7205",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00005-01"
+  },
+  {
+   "code": "MM00006",
+   "section": "01",
+   "name": "기업재무관리",
+   "credit": 3,
+   "professor": "최우석",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "7202"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "7202"
+    }
+   ],
+   "id": "MM00006-01"
+  },
+  {
+   "code": "MM00007",
+   "section": "01",
+   "name": "경영전략",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "3502"
+    }
+   ],
+   "id": "MM00007-01"
+  },
+  {
+   "code": "MM00009",
+   "section": "01",
+   "name": "마케팅",
+   "credit": 3,
+   "professor": "이상훈",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "7208"
+    }
+   ],
+   "id": "MM00009-01"
+  },
+  {
+   "code": "MM00011",
+   "section": "01",
+   "name": "셀프리더십",
+   "credit": 3,
+   "professor": "염준규",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00011-01"
+  },
+  {
+   "code": "MM00013",
+   "section": "01",
+   "name": "조직행동",
+   "credit": 3,
+   "professor": "정선영",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00013-01"
+  },
+  {
+   "code": "MM00014",
+   "section": "01",
+   "name": "운영관리",
+   "credit": 3,
+   "professor": "박상선",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "3502"
+    }
+   ],
+   "id": "MM00014-01"
+  },
+  {
+   "code": "MM00015",
+   "section": "01",
+   "name": "포트폴리오와투자관리",
+   "credit": 3,
+   "professor": "최우석",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "7202"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "7202"
+    }
+   ],
+   "id": "MM00015-01"
+  },
+  {
+   "code": "MM00016",
+   "section": "01",
+   "name": "경영영어",
+   "credit": 3,
+   "professor": "조수미",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00016-01"
+  },
+  {
+   "code": "MM00018",
+   "section": "01",
+   "name": "서비스경영",
+   "credit": 3,
+   "professor": "이상훈",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "7206"
+    }
+   ],
+   "id": "MM00018-01"
+  },
+  {
+   "code": "MM00020",
+   "section": "01",
+   "name": "경영회계",
+   "credit": 3,
+   "professor": "이동욱",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7306"
+    }
+   ],
+   "id": "MM00020-01"
+  },
+  {
+   "code": "MM00021",
+   "section": "01",
+   "name": "경영빅데이터프로그래밍",
+   "credit": 3,
+   "professor": "송재민",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "B105"
+    }
+   ],
+   "creditEstimated": true,
+   "id": "MM00021-01"
+  },
+  {
+   "code": "MM00029",
+   "section": "01",
+   "name": "실전창업의이해",
+   "credit": 3,
+   "professor": "이강산",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "7205"
+    }
+   ],
+   "id": "MM00029-01"
+  },
+  {
+   "code": "MM00031",
+   "section": "01",
+   "name": "스타트업인사이트:크라우드펀딩의이해",
+   "credit": 3,
+   "professor": "김형민",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "7205"
+    }
+   ],
+   "creditEstimated": true,
+   "id": "MM00031-01"
+  },
+  {
+   "code": "MM00032",
+   "section": "01",
+   "name": "재무회계",
+   "credit": 3,
+   "professor": "김용미",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 795,
+     "room": "7202"
+    },
+    {
+     "day": "수",
+     "start": 720,
+     "end": 795,
+     "room": "7202"
+    }
+   ],
+   "id": "MM00032-01"
+  },
+  {
+   "code": "MM00035",
+   "section": "01",
+   "name": "AI활용비즈니스데이터분석",
+   "credit": 3,
+   "professor": "박상선",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "경영학전공(경영학부)",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7205"
+    }
+   ],
+   "creditEstimated": true,
+   "id": "MM00035-01"
+  },
+  {
+   "code": "DJ00001",
+   "section": "01",
+   "name": "스토리텔링과 미디어",
+   "credit": 3,
+   "professor": "백정숙",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00001-01"
+  },
+  {
+   "code": "DJ00003",
+   "section": "01",
+   "name": "미디어법과정책",
+   "credit": 3,
+   "professor": "김서중",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00003-01"
+  },
+  {
+   "code": "DJ00004",
+   "section": "01",
+   "name": "한국현대문화사",
+   "credit": 3,
+   "professor": "조인애",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "3301"
+    }
+   ],
+   "id": "DJ00004-01"
+  },
+  {
+   "code": "DJ00005",
+   "section": "01",
+   "name": "미디어조사방법",
+   "credit": 3,
+   "professor": "조은기",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00005-01"
+  },
+  {
+   "code": "DJ00006",
+   "section": "01",
+   "name": "기사작성과 편집",
+   "credit": 3,
+   "professor": "김수연",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00006-01"
+  },
+  {
+   "code": "DJ00011",
+   "section": "01",
+   "name": "광고크리에이티브",
+   "credit": 3,
+   "professor": "윤목",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00011-01"
+  },
+  {
+   "code": "DJ00014",
+   "section": "01",
+   "name": "문화기획과예술경영",
+   "credit": 3,
+   "professor": "양재영",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00014-01"
+  },
+  {
+   "code": "DJ00015",
+   "section": "01",
+   "name": "연극과커뮤니케이션",
+   "credit": 3,
+   "professor": "권정택",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "3401"
+    }
+   ],
+   "id": "DJ00015-01"
+  },
+  {
+   "code": "DJ00016",
+   "section": "01",
+   "name": "영상분석과비평",
+   "credit": 3,
+   "professor": "이종임",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "3301"
+    }
+   ],
+   "id": "DJ00016-01"
+  },
+  {
+   "code": "DJ00017",
+   "section": "01",
+   "name": "광고캠페인",
+   "credit": 3,
+   "professor": "유은아",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00017-01"
+  },
+  {
+   "code": "DJ00018",
+   "section": "01",
+   "name": "소셜미디어와 시민사회",
+   "credit": 3,
+   "professor": "김소형",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00018-01"
+  },
+  {
+   "code": "DJ00038",
+   "section": "01",
+   "name": "커뮤니케이션 사상사",
+   "credit": 3,
+   "professor": "조은기",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00038-01"
+  },
+  {
+   "code": "DJ00039",
+   "section": "01",
+   "name": "4차산업혁명과디지털미디어플랫폼",
+   "credit": 3,
+   "professor": "조은기",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00039-01"
+  },
+  {
+   "code": "DJ00047",
+   "section": "01",
+   "name": "글로벌시대한류와미디어",
+   "credit": 3,
+   "professor": "김아영",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7616"
+    }
+   ],
+   "id": "DJ00047-01"
+  },
+  {
+   "code": "DJ00048",
+   "section": "01",
+   "name": "K-pop과문화연구",
+   "credit": 3,
+   "professor": "방희경",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "7308"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00048-01"
+  },
+  {
+   "code": "DJ00049",
+   "section": "01",
+   "name": "한국영화사",
+   "credit": 3,
+   "professor": "방희경",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "7308"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00049-01"
+  },
+  {
+   "code": "DJ00050",
+   "section": "01",
+   "name": "스포츠콘텐츠이해와실습",
+   "credit": 3,
+   "professor": "정윤수",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00050-01"
+  },
+  {
+   "code": "DJ00051",
+   "section": "01",
+   "name": "과학기술시대의문화읽기",
+   "credit": 3,
+   "professor": "임연경",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00051-01"
+  },
+  {
+   "code": "DJ00060",
+   "section": "01",
+   "name": "광고론",
+   "credit": 3,
+   "professor": "김인혜",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "7107"
+    }
+   ],
+   "id": "DJ00060-01"
+  },
+  {
+   "code": "DJ00061",
+   "section": "01",
+   "name": "미디어와다문화감수성",
+   "credit": 3,
+   "professor": "김형신",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00061-01"
+  },
+  {
+   "code": "DJ00062",
+   "section": "01",
+   "name": "매스컴이론",
+   "credit": 3,
+   "professor": "이준형",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "3402"
+    }
+   ],
+   "id": "DJ00062-01"
+  },
+  {
+   "code": "DJ00068",
+   "section": "01",
+   "name": "도시문화의이해",
+   "credit": 3,
+   "professor": "정윤수",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "7308"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00068-01"
+  },
+  {
+   "code": "DJ00069",
+   "section": "01",
+   "name": "AI와지적재산권",
+   "credit": 3,
+   "professor": "윤장열",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00069-01"
+  },
+  {
+   "code": "DJ00070",
+   "section": "01",
+   "name": "인터렉티브미디어",
+   "credit": 3,
+   "professor": "윤장열",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00070-01"
+  },
+  {
+   "code": "DJ00071",
+   "section": "01",
+   "name": "AI미디어,문화,리터러시",
+   "credit": 3,
+   "professor": "송원숙",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00071-01"
+  },
+  {
+   "code": "DJ00072",
+   "section": "01",
+   "name": "문화연구와문화이론",
+   "credit": 3,
+   "professor": "홍남희",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "7107"
+    }
+   ],
+   "id": "DJ00072-01"
+  },
+  {
+   "code": "DJ00073",
+   "section": "01",
+   "name": "창의적말하기와글쓰기",
+   "credit": 3,
+   "professor": "김영빈",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "7308"
+    }
+   ],
+   "id": "DJ00073-01"
+  },
+  {
+   "code": "DJ00074",
+   "section": "01",
+   "name": "콘텐츠유니버스설계",
+   "credit": 3,
+   "professor": "원장경",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "3401"
+    }
+   ],
+   "id": "DJ00074-01"
+  },
+  {
+   "code": "DP00008",
+   "section": "01",
+   "name": "웹드라마비평",
+   "credit": 3,
+   "professor": "강인",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "7305"
+    }
+   ],
+   "id": "DP00008-01"
+  },
+  {
+   "code": "DP00010",
+   "section": "01",
+   "name": "프로듀싱의이해",
+   "credit": 3,
+   "professor": "강나영",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "신문방송학전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "M401"
+    }
+   ],
+   "id": "DP00010-01"
+  },
+  {
+   "code": "DD00018",
+   "section": "01",
+   "name": "게임제작",
+   "credit": 3,
+   "professor": "김대우",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00018-01"
+  },
+  {
+   "code": "DD00021",
+   "section": "01",
+   "name": "고급영상합성",
+   "credit": 3,
+   "professor": "양형석",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00021-01"
+  },
+  {
+   "code": "DD00037",
+   "section": "01",
+   "name": "코딩으로배우는미디어아트",
+   "credit": 3,
+   "professor": "김대우",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00037-01"
+  },
+  {
+   "code": "DD00040",
+   "section": "01",
+   "name": "3D모델링",
+   "credit": 3,
+   "professor": "이원정",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00040-01"
+  },
+  {
+   "code": "DD00042",
+   "section": "01",
+   "name": "디지털이미지비평",
+   "credit": 3,
+   "professor": "박남기",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "3301"
+    }
+   ],
+   "id": "DD00042-01"
+  },
+  {
+   "code": "DD00044",
+   "section": "01",
+   "name": "기초게임엔진",
+   "credit": 3,
+   "professor": "박남기",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "M401"
+    }
+   ],
+   "id": "DD00044-01"
+  },
+  {
+   "code": "DD00046",
+   "section": "01",
+   "name": "디지털콘텐츠기획",
+   "credit": 3,
+   "professor": "정은주",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "1504"
+    }
+   ],
+   "id": "DD00046-01"
+  },
+  {
+   "code": "DD00050",
+   "section": "01",
+   "name": "캡스톤디자인-콘텐츠제작프로젝트2",
+   "credit": 3,
+   "professor": "이원정",
+   "type": "전공필수",
+   "grade": "3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1130,
+     "room": "7706"
+    }
+   ],
+   "id": "DD00050-01"
+  },
+  {
+   "code": "DD00050",
+   "section": "02",
+   "name": "캡스톤디자인-콘텐츠제작프로젝트2",
+   "credit": 3,
+   "professor": "이영아",
+   "type": "전공필수",
+   "grade": "3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1130,
+     "room": "6402"
+    }
+   ],
+   "id": "DD00050-02"
+  },
+  {
+   "code": "DD00051",
+   "section": "01",
+   "name": "디지털페인팅",
+   "credit": 3,
+   "professor": "김연수",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00051-01"
+  },
+  {
+   "code": "DD00058",
+   "section": "01",
+   "name": "게임산업과e스포츠",
+   "credit": 3,
+   "professor": "정중호",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00058-01"
+  },
+  {
+   "code": "DD00059",
+   "section": "01",
+   "name": "숏폼콘텐츠제작실습",
+   "credit": 3,
+   "professor": "이병준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "B105"
+    }
+   ],
+   "id": "DD00059-01"
+  },
+  {
+   "code": "DD00063",
+   "section": "01",
+   "name": "디지털기초디자인",
+   "credit": 3,
+   "professor": "오세현",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00063-01"
+  },
+  {
+   "code": "DD00065",
+   "section": "01",
+   "name": "광고크리에이티브디자인",
+   "credit": 3,
+   "professor": "주진식",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "M401"
+    }
+   ],
+   "id": "DD00065-01"
+  },
+  {
+   "code": "DD00067",
+   "section": "01",
+   "name": "언리얼엔진기반의효율적디지털휴먼제작",
+   "credit": 3,
+   "professor": "이진욱",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "B105"
+    }
+   ],
+   "id": "DD00067-01"
+  },
+  {
+   "code": "DD00068",
+   "section": "01",
+   "name": "예능작가실무워크숍",
+   "credit": 3,
+   "professor": "김희수",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00068-01"
+  },
+  {
+   "code": "DD00070",
+   "section": "01",
+   "name": "팬덤문화온라인마케팅",
+   "credit": 3,
+   "professor": "최원준",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "7304"
+    }
+   ],
+   "id": "DD00070-01"
+  },
+  {
+   "code": "DD00071",
+   "section": "01",
+   "name": "웹툰콘텐츠디자인입문",
+   "credit": 3,
+   "professor": "호중훈",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 900,
+     "end": 1070,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00071-01"
+  },
+  {
+   "code": "DD00074",
+   "section": "01",
+   "name": "AI브랜드&컨셉디자인",
+   "credit": 3,
+   "professor": "최인호",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 720,
+     "end": 890,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00074-01"
+  },
+  {
+   "code": "DD00075",
+   "section": "01",
+   "name": "기초촬영실무",
+   "credit": 3,
+   "professor": "오세현",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00075-01"
+  },
+  {
+   "code": "DD00076",
+   "section": "01",
+   "name": "다큐멘터리제작워크숍",
+   "credit": 3,
+   "professor": "오세현",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 1070,
+     "room": "6402"
+    }
+   ],
+   "id": "DD00076-01"
+  },
+  {
+   "code": "DD00077",
+   "section": "01",
+   "name": "디지털뮤직콘텐츠:AI제작에서글로벌마케팅 까지",
+   "credit": 3,
+   "professor": "길대호",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 890,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00077-01"
+  },
+  {
+   "code": "DD00078",
+   "section": "01",
+   "name": "뉴미디어기초조형",
+   "credit": 3,
+   "professor": "김대우",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "디지털콘텐츠전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 720,
+     "end": 890,
+     "room": "6403"
+    }
+   ],
+   "id": "DD00078-01"
+  },
+  {
+   "code": "DP00006",
+   "section": "01",
+   "name": "영상제작실습2",
+   "credit": 3,
+   "professor": "연희승",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "M401"
+    }
+   ],
+   "id": "DP00006-01"
+  },
+  {
+   "code": "DP00007",
+   "section": "01",
+   "name": "1인 제작과 아이디어",
+   "credit": 3,
+   "professor": "연희승",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "M401"
+    }
+   ],
+   "id": "DP00007-01"
+  },
+  {
+   "code": "DP00016",
+   "section": "01",
+   "name": "영상매체와정치그리고경제",
+   "credit": 3,
+   "professor": "최진봉",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7305"
+    }
+   ],
+   "id": "DP00016-01"
+  },
+  {
+   "code": "DP00017",
+   "section": "01",
+   "name": "영상미디어이론과비평",
+   "credit": 3,
+   "professor": "최진봉",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "9990"
+    }
+   ],
+   "id": "DP00017-01"
+  },
+  {
+   "code": "DP00018",
+   "section": "01",
+   "name": "영상매체시대의PR캠페인실습",
+   "credit": 3,
+   "professor": "최진봉",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "9990"
+    }
+   ],
+   "id": "DP00018-01"
+  },
+  {
+   "code": "DP00019",
+   "section": "01",
+   "name": "포토샵과비주얼디자인",
+   "credit": 3,
+   "professor": "이창희",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 1070,
+     "room": "6403"
+    }
+   ],
+   "id": "DP00019-01"
+  },
+  {
+   "code": "DP00020",
+   "section": "01",
+   "name": "영상편집표현과구성",
+   "credit": 3,
+   "professor": "홍지영",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 890,
+     "room": "M401"
+    }
+   ],
+   "id": "DP00020-01"
+  },
+  {
+   "code": "DP00021",
+   "section": "01",
+   "name": "에프터이펙트기초",
+   "credit": 3,
+   "professor": "최대식",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 900,
+     "end": 1070,
+     "room": "M401"
+    }
+   ],
+   "id": "DP00021-01"
+  },
+  {
+   "code": "DP00022",
+   "section": "01",
+   "name": "미디어엔터테인먼트산업론",
+   "credit": 3,
+   "professor": "김정훈",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "영상콘텐츠전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "7205"
+    }
+   ],
+   "id": "DP00022-01"
+  },
+  {
+   "code": "FH00005",
+   "section": "01",
+   "name": "경영정보시스템의이해",
+   "credit": 3,
+   "professor": "김수림",
+   "type": "전공필수",
+   "grade": "2",
+   "category": "빅데이터응용전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "1504"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "1504"
+    }
+   ],
+   "id": "FH00005-01"
+  },
+  {
+   "code": "FH00011",
+   "section": "01",
+   "name": "데이터베이스와SQL",
+   "credit": 3,
+   "professor": "김상준",
+   "type": "전공필수",
+   "grade": "3",
+   "category": "빅데이터응용전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "B105"
+    }
+   ],
+   "id": "FH00011-01"
+  },
+  {
+   "code": "FH00012",
+   "section": "01",
+   "name": "데이터시대의사회과학",
+   "credit": 3,
+   "professor": "김수림",
+   "type": "전공선택",
+   "grade": "3",
+   "category": "빅데이터응용전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "7205"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "7205"
+    }
+   ],
+   "id": "FH00012-01"
+  },
+  {
+   "code": "FH00013",
+   "section": "01",
+   "name": "라이프데이터분석과AI",
+   "credit": 3,
+   "professor": "김양희",
+   "type": "전공선택",
+   "grade": "2,3",
+   "category": "빅데이터응용전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "B105"
+    }
+   ],
+   "id": "FH00013-01"
+  },
+  {
+   "code": "FH00014",
+   "section": "01",
+   "name": "빅데이터보고서작성과표현기법",
+   "credit": 3,
+   "professor": "김양희",
+   "type": "전공선택",
+   "grade": "3",
+   "category": "빅데이터응용전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "B105"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "B105"
+    }
+   ],
+   "id": "FH00014-01"
+  },
+  {
+   "code": "FH00015",
+   "section": "01",
+   "name": "빅데이터프로그래밍",
+   "credit": 3,
+   "professor": "김양희",
+   "type": "전공선택",
+   "grade": "2",
+   "category": "빅데이터응용전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "3302"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "3302"
+    }
+   ],
+   "id": "FH00015-01"
+  },
+  {
+   "code": "FI00001",
+   "section": "01",
+   "name": "머신러닝입문",
+   "credit": 3,
+   "professor": "홍성준",
+   "type": "전공필수",
+   "grade": "2",
+   "category": "미래인공지능전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "6405"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "6405"
+    }
+   ],
+   "id": "FI00001-01"
+  },
+  {
+   "code": "FI00005",
+   "section": "01",
+   "name": "고급Python프로그래밍",
+   "credit": 3,
+   "professor": "공준욱",
+   "type": "전공선택",
+   "grade": "2",
+   "category": "미래인공지능전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "6405"
+    }
+   ],
+   "id": "FI00005-01"
+  },
+  {
+   "code": "FI00010",
+   "section": "01",
+   "name": "강화학습",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공선택",
+   "grade": "4",
+   "category": "미래인공지능전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "1503"
+    }
+   ],
+   "id": "FI00010-01"
+  },
+  {
+   "code": "FI00011",
+   "section": "01",
+   "name": "인공지능수학",
+   "credit": 3,
+   "professor": "곽승우",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "미래인공지능전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "6405"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "6405"
+    }
+   ],
+   "id": "FI00011-01"
+  },
+  {
+   "code": "FI00012",
+   "section": "01",
+   "name": "순환신경망과자연어처리",
+   "credit": 3,
+   "professor": "곽승우",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "미래인공지능전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "6405"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "6405"
+    }
+   ],
+   "id": "FI00012-01"
+  },
+  {
+   "code": "XB00032",
+   "section": "01",
+   "name": "졸업지도",
+   "credit": 1,
+   "professor": "김명철",
+   "type": "전공필수",
+   "grade": "4",
+   "category": "소프트웨어공학전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 1105,
+     "end": 1155,
+     "room": "6206"
+    }
+   ],
+   "id": "XB00032-01"
+  },
+  {
+   "code": "XE00022",
+   "section": "01",
+   "name": "인턴십1",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공선택",
+   "grade": "4",
+   "category": "인공지능전공",
+   "times": [],
+   "id": "XE00022-01"
+  },
+  {
+   "code": "XE00023",
+   "section": "01",
+   "name": "인턴십2",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공선택",
+   "grade": "4",
+   "category": "인공지능전공",
+   "times": [],
+   "id": "XE00023-01"
+  },
+  {
+   "code": "XE00024",
+   "section": "01",
+   "name": "인턴십3",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공선택",
+   "grade": "4",
+   "category": "인공지능전공",
+   "times": [],
+   "id": "XE00024-01"
+  },
+  {
+   "code": "XE00025",
+   "section": "01",
+   "name": "인턴십4",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공선택",
+   "grade": "4",
+   "category": "인공지능전공",
+   "times": [],
+   "id": "XE00025-01"
+  },
+  {
+   "code": "XE00014",
+   "section": "01",
+   "name": "인공지능캡스톤디자인",
+   "credit": 3,
+   "professor": "이상윤",
+   "type": "전공선택",
+   "grade": "4",
+   "category": "인공지능전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "6405"
+    }
+   ],
+   "id": "XE00014-01"
+  },
+  {
+   "code": "FI00013",
+   "section": "01",
+   "name": "라이프데이터분석과AI",
+   "credit": 3,
+   "professor": "김양희",
+   "type": "전공선택",
+   "grade": "2,3",
+   "category": "인공지능전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "B105"
+    }
+   ],
+   "id": "FI00013-01"
+  },
+  {
+   "code": "IS00001",
+   "section": "01",
+   "name": "Javascript프로그래밍",
+   "credit": 3,
+   "professor": "이해신",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00001-01"
+  },
+  {
+   "code": "IS00002",
+   "section": "01",
+   "name": "Java프로그래밍",
+   "credit": 3,
+   "professor": "김선형",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "6202"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00002-01"
+  },
+  {
+   "code": "IS00004",
+   "section": "01",
+   "name": "데이터베이스",
+   "credit": 3,
+   "professor": "홍은지",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "6206"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "6206"
+    }
+   ],
+   "id": "IS00004-01"
+  },
+  {
+   "code": "IS00005",
+   "section": "01",
+   "name": "데이터분석입문",
+   "credit": 3,
+   "professor": "이상욱",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "6206"
+    }
+   ],
+   "id": "IS00005-01"
+  },
+  {
+   "code": "IS00008",
+   "section": "01",
+   "name": "논리회로설계",
+   "credit": 3,
+   "professor": "유상신",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00008-01"
+  },
+  {
+   "code": "IS00010",
+   "section": "01",
+   "name": "전공지도",
+   "credit": 1,
+   "professor": "이하규",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 1105,
+     "end": 1155,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00010-01"
+  },
+  {
+   "code": "IS00011",
+   "section": "01",
+   "name": "C++프로그래밍",
+   "credit": 3,
+   "professor": "이하규",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 990,
+     "end": 1065,
+     "room": "6406"
+    },
+    {
+     "day": "수",
+     "start": 990,
+     "end": 1065,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00011-01"
+  },
+  {
+   "code": "IS00012",
+   "section": "01",
+   "name": "자료구조",
+   "credit": 3,
+   "professor": "김명철",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "6206"
+    }
+   ],
+   "id": "IS00012-01"
+  },
+  {
+   "code": "IS00012",
+   "section": "02",
+   "name": "자료구조",
+   "credit": 3,
+   "professor": "김명철",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "6206"
+    }
+   ],
+   "id": "IS00012-02"
+  },
+  {
+   "code": "IS00012",
+   "section": "03",
+   "name": "자료구조",
+   "credit": 3,
+   "professor": "이상욱",
+   "type": "전공필수",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "6206"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "6206"
+    }
+   ],
+   "id": "IS00012-03"
+  },
+  {
+   "code": "IS00013",
+   "section": "01",
+   "name": "컴퓨터구조",
+   "credit": 3,
+   "professor": "유상신",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "6202"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00013-01"
+  },
+  {
+   "code": "IS00014",
+   "section": "01",
+   "name": "JSP프로그래밍",
+   "credit": 3,
+   "professor": "박정식",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "목",
+     "start": 540,
+     "end": 710,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00014-01"
+  },
+  {
+   "code": "IS00015",
+   "section": "01",
+   "name": "백엔드프로그래밍",
+   "credit": 3,
+   "professor": "김선형",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "6202"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00015-01"
+  },
+  {
+   "code": "IS00015",
+   "section": "02",
+   "name": "백엔드프로그래밍",
+   "credit": 3,
+   "professor": "김선형",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "6202"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00015-02"
+  },
+  {
+   "code": "IS00016",
+   "section": "01",
+   "name": "컴퓨터네트워크",
+   "credit": 3,
+   "professor": "유상신",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 990,
+     "end": 1065,
+     "room": "6201"
+    },
+    {
+     "day": "목",
+     "start": 990,
+     "end": 1065,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00016-01"
+  },
+  {
+   "code": "IS00016",
+   "section": "02",
+   "name": "컴퓨터네트워크",
+   "credit": 3,
+   "professor": "유상신",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 900,
+     "end": 975,
+     "room": "6201"
+    },
+    {
+     "day": "목",
+     "start": 900,
+     "end": 975,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00016-02"
+  },
+  {
+   "code": "IS00018",
+   "section": "01",
+   "name": "서버구축및형상관리",
+   "credit": 3,
+   "professor": "이승진",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00018-01"
+  },
+  {
+   "code": "IS00019",
+   "section": "01",
+   "name": "신호및시스템",
+   "credit": 3,
+   "professor": "김학수",
+   "type": "전공선택",
+   "grade": "2,3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "6201"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00019-01"
+  },
+  {
+   "code": "IS00021",
+   "section": "01",
+   "name": "과정지도",
+   "credit": 1,
+   "professor": "임충규",
+   "type": "전공필수",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 1105,
+     "end": 1155,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00021-01"
+  },
+  {
+   "code": "IS00022",
+   "section": "01",
+   "name": "네트워크프로그래밍",
+   "credit": 3,
+   "professor": "박정식",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 810,
+     "end": 885,
+     "room": "6406"
+    },
+    {
+     "day": "목",
+     "start": 810,
+     "end": 885,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00022-01"
+  },
+  {
+   "code": "IS00024",
+   "section": "01",
+   "name": "리눅스시스템",
+   "credit": 3,
+   "professor": "박정식",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 540,
+     "end": 710,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00024-01"
+  },
+  {
+   "code": "IS00025",
+   "section": "01",
+   "name": "모바일프로그래밍",
+   "credit": 3,
+   "professor": "이종현",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00025-01"
+  },
+  {
+   "code": "IS00026",
+   "section": "01",
+   "name": "백엔드프레임워크",
+   "credit": 3,
+   "professor": "이승진",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 795,
+     "room": "6202"
+    },
+    {
+     "day": "수",
+     "start": 720,
+     "end": 795,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00026-01"
+  },
+  {
+   "code": "IS00030",
+   "section": "01",
+   "name": "컴퓨터그래픽스",
+   "credit": 3,
+   "professor": "임충규",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 990,
+     "end": 1065,
+     "room": "6201"
+    },
+    {
+     "day": "수",
+     "start": 990,
+     "end": 1065,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00030-01"
+  },
+  {
+   "code": "IS00031",
+   "section": "01",
+   "name": "프론트엔드프로그래밍",
+   "credit": 3,
+   "professor": "이승진",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "6202"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00031-01"
+  },
+  {
+   "code": "IS00033",
+   "section": "01",
+   "name": "AI활용프로그래밍",
+   "credit": 3,
+   "professor": "김학수",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 900,
+     "end": 975,
+     "room": "6201"
+    },
+    {
+     "day": "수",
+     "start": 900,
+     "end": 975,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00033-01"
+  },
+  {
+   "code": "IS00034",
+   "section": "01",
+   "name": "Java네트워크프로그래밍",
+   "credit": 3,
+   "professor": "이승진",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 990,
+     "end": 1065,
+     "room": "6202"
+    },
+    {
+     "day": "수",
+     "start": 990,
+     "end": 1065,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00034-01"
+  },
+  {
+   "code": "IS00035",
+   "section": "01",
+   "name": "AR/VR시스템개발",
+   "credit": 3,
+   "professor": "임충규",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00035-01"
+  },
+  {
+   "code": "IS00036",
+   "section": "01",
+   "name": "디지털영상처리",
+   "credit": 3,
+   "professor": "김학수",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "수",
+     "start": 540,
+     "end": 710,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00036-01"
+  },
+  {
+   "code": "IS00038",
+   "section": "01",
+   "name": "TCP/IP",
+   "credit": 3,
+   "professor": "박정식",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "화",
+     "start": 720,
+     "end": 795,
+     "room": "6406"
+    },
+    {
+     "day": "목",
+     "start": 720,
+     "end": 795,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00038-01"
+  },
+  {
+   "code": "IS00039",
+   "section": "01",
+   "name": "인터넷보안",
+   "credit": 3,
+   "professor": "이종현",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00039-01"
+  },
+  {
+   "code": "IS00040",
+   "section": "01",
+   "name": "정보보호개론",
+   "credit": 3,
+   "professor": "이종현",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "6406"
+    }
+   ],
+   "id": "IS00040-01"
+  },
+  {
+   "code": "IS00042",
+   "section": "01",
+   "name": "게임프로그래밍",
+   "credit": 3,
+   "professor": "임충규",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00042-01"
+  },
+  {
+   "code": "IS00043",
+   "section": "01",
+   "name": "시스템분석및설계",
+   "credit": 3,
+   "professor": "문성현",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 540,
+     "end": 710,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00043-01"
+  },
+  {
+   "code": "IS00044",
+   "section": "01",
+   "name": "인공지능",
+   "credit": 3,
+   "professor": "이상욱",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 720,
+     "end": 795,
+     "room": "6206"
+    },
+    {
+     "day": "수",
+     "start": 720,
+     "end": 795,
+     "room": "6206"
+    }
+   ],
+   "id": "IS00044-01"
+  },
+  {
+   "code": "IS00045",
+   "section": "01",
+   "name": "통계자료분석및실습",
+   "credit": 3,
+   "professor": "윤명호",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 540,
+     "end": 710,
+     "room": "3302"
+    }
+   ],
+   "id": "IS00045-01"
+  },
+  {
+   "code": "IS00046",
+   "section": "01",
+   "name": "프론트엔드프레임워크",
+   "credit": 3,
+   "professor": "이승진",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "월",
+     "start": 810,
+     "end": 885,
+     "room": "6202"
+    },
+    {
+     "day": "수",
+     "start": 810,
+     "end": 885,
+     "room": "6202"
+    }
+   ],
+   "id": "IS00046-01"
+  },
+  {
+   "code": "IS00047",
+   "section": "01",
+   "name": "빅데이터응용",
+   "credit": 3,
+   "professor": "차현정",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 900,
+     "end": 1070,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00047-01"
+  },
+  {
+   "code": "IS00048",
+   "section": "01",
+   "name": "고급Java프로그래밍",
+   "credit": 3,
+   "professor": "문성현",
+   "type": "전공선택",
+   "grade": "3,4",
+   "category": "소프트웨어융합전공",
+   "times": [
+    {
+     "day": "금",
+     "start": 720,
+     "end": 890,
+     "room": "6201"
+    }
+   ],
+   "id": "IS00048-01"
+  }
+ ]
+}

@@ -1,0 +1,455 @@
+/* ==========================================================================
+   시간표 짜줘 - 스타일
+   - 색·간격·모서리는 모두 :root의 변수(토큰)로 정해 두고, 다크 모드는 변수만 바꾼다
+   - app.js가 쓰는 class/id 이름은 그대로 두고 모양만 바꾼다 (기능에 영향 없음)
+   ========================================================================== */
+
+:root {
+  /* 바탕과 글자 */
+  --bg: #f3f4f7;
+  --card: #ffffff;
+  --sunken: #f7f8fa;          /* 입력 칸·목록 상자처럼 한 단계 들어간 면 */
+  --text: #191b22;
+  --text-2: #4a4f5c;          /* 칸 이름 등 보조 글자 */
+  --muted: #7a8090;           /* 안내 문구 */
+  --line: #e3e6ec;
+  --line-strong: #cfd4dd;
+
+  /* 강조색 (파랑) */
+  --accent: #3858e9;
+  --accent-hover: #2b47c9;
+  --accent-soft: #eaeefe;     /* 선택된 칩·배지 바탕 */
+  --accent-text: #ffffff;
+
+  /* 상태 */
+  --error: #c4352b;
+  --error-soft: #fdeeec;
+  --warn: #9a5800;
+  --warn-soft: #fff4e2;
+  --ok-soft: #e9f6ef;
+  --ok: #217a4b;
+
+  /* 시간표 수업 칸: 바탕색과 왼쪽 띠 색 */
+  --c0: #e3ebff; --c0e: #5b7cf0;
+  --c1: #ffe8df; --c1e: #e5784f;
+  --c2: #def4e7; --c2e: #3aa168;
+  --c3: #f1e5ff; --c3e: #9a62e0;
+  --c4: #fff3d1; --c4e: #d6a11e;
+  --c5: #dcf2f6; --c5e: #2e9db0;
+  --c6: #ffe2ec; --c6e: #dd5d8a;
+  --c7: #ebe8e0; --c7e: #8f8672;
+  --block-text: #1b1d24;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 1px 2px rgba(20, 24, 40, 0.04), 0 4px 16px rgba(20, 24, 40, 0.05);
+  --ring: 0 0 0 3px rgba(56, 88, 233, 0.22);
+
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  font-size: 15px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111318;
+    --card: #1a1d24;
+    --sunken: #15171d;
+    --text: #eceef3;
+    --text-2: #c3c7d1;
+    --muted: #8f95a3;
+    --line: #2b2f39;
+    --line-strong: #3a3f4b;
+
+    --accent: #7d97ff;
+    --accent-hover: #9aafff;
+    --accent-soft: #232c4d;
+    --accent-text: #0d1330;
+
+    --error: #ff8d80;
+    --error-soft: #3a1f1d;
+    --warn: #f3b860;
+    --warn-soft: #3a2b14;
+    --ok-soft: #173126;
+    --ok: #7fd4a4;
+
+    --c0: #26355f; --c0e: #7d97ff;
+    --c1: #57301f; --c1e: #f0936b;
+    --c2: #1d4632; --c2e: #5ccb8d;
+    --c3: #3f2a5c; --c3e: #b78cf0;
+    --c4: #4d3d12; --c4e: #e8bd45;
+    --c5: #183f47; --c5e: #4fc0d3;
+    --c6: #552235; --c6e: #f07fa6;
+    --c7: #3a372f; --c7e: #b3a98f;
+    --block-text: #f3f4f8;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.25);
+    --ring: 0 0 0 3px rgba(125, 151, 255, 0.3);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+/* hidden 속성은 브라우저 기본 스타일이라 .field-row { display: flex } 같은 규칙에 지고 화면에 그대로 보인다.
+   app.js가 hidden으로 숨긴 영역은 어떤 display 규칙이 있어도 숨겨지도록 한다 */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;        /* 한국어가 단어 중간에서 줄바꿈되지 않게 */
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 머리말 ---------- */
+.top { padding: 32px 20px 4px; max-width: 1320px; margin: 0 auto; }
+.top h1 { margin: 0; font-size: 1.75rem; font-weight: 800; letter-spacing: -0.03em; }
+.sub { margin: 6px 0 0; color: var(--muted); font-size: 0.95rem; }
+#semester:not(:empty) {
+  display: inline-block; margin-left: 4px; padding: 1px 10px;
+  border-radius: 999px; background: var(--card); border: 1px solid var(--line);
+  color: var(--text-2); font-size: 0.82rem;
+}
+
+/* ---------- 큰 배치: 왼쪽 입력 / 오른쪽 결과 ---------- */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 460px) 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+  align-items: start;
+}
+.panel-col { display: grid; gap: 20px; min-width: 0; }
+
+/* ---------- 카드 ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  min-width: 0;
+}
+.card h2 {
+  margin: 0 0 6px; font-size: 1.12rem; font-weight: 750; letter-spacing: -0.02em;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.card h2 .muted { font-weight: 500; }
+/* 카드 안의 소제목: 위에 구분선을 둬서 '여기부터 다른 묶음'임을 보이게 한다 */
+.card h3 {
+  margin: 20px 0 6px; padding-top: 18px; border-top: 1px dashed var(--line);
+  font-size: 0.95rem; font-weight: 700; color: var(--text);
+}
+.step {
+  display: inline-grid; place-items: center; flex: none;
+  width: 28px; height: 28px; border-radius: 9px;
+  background: var(--accent); color: var(--accent-text);
+  font-size: 0.85rem; font-weight: 800;
+}
+
+/* ---------- 입력 칸 ---------- */
+input, select, button { font: inherit; color: inherit; }
+input[type="search"], input[type="number"], select {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--text);
+  min-width: 0;
+  font-weight: 400; /* 칸 이름(라벨)의 굵은 글씨를 물려받지 않게 */
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+select { padding-right: 8px; cursor: pointer; }
+input[type="search"]::placeholder { color: var(--muted); }
+input[type="number"] { width: 84px; }
+input:hover, select:hover { border-color: var(--muted); }
+select:disabled { background: var(--sunken); color: var(--muted); cursor: not-allowed; }
+input:focus-visible, select:focus-visible { outline: none; border-color: var(--accent); box-shadow: var(--ring); }
+input[type="checkbox"] { accent-color: var(--accent); width: 16px; height: 16px; }
+
+/* 칸 이름(라벨)은 작고 굵게, 칸은 그 아래에 */
+.field-row { display: flex; flex-wrap: wrap; gap: 12px 14px; margin: 14px 0 0; align-items: end; }
+.field-row label { display: grid; gap: 6px; font-size: 0.82rem; font-weight: 650; color: var(--text-2); }
+.field-row .grow { flex: 1; min-width: 0; }
+.field-row .grow select { width: 100%; }
+
+/* ---------- 버튼 ---------- */
+button {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 9px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s, transform 0.05s;
+}
+button:hover:not(:disabled) { background: var(--accent-hover); border-color: var(--accent-hover); }
+button:active:not(:disabled) { transform: translateY(1px); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+button:focus-visible { outline: none; box-shadow: var(--ring); }
+button.ghost { background: var(--card); color: var(--text); border-color: var(--line-strong); font-weight: 600; }
+button.ghost:hover:not(:disabled) { background: var(--sunken); border-color: var(--muted); }
+button.primary {
+  display: block; width: 100%; height: 52px; margin-top: 22px;
+  font-size: 1.02rem; font-weight: 750; border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(56, 88, 233, 0.28);
+}
+button.primary:disabled { box-shadow: none; }
+/* 전체 초기화는 실수로 누르지 않게 '만들기' 버튼보다 눈에 덜 띄게, 오류 색으로 위험한 동작임을 알린다 */
+button.reset-all {
+  display: block; width: 100%; height: 40px; margin-top: 10px;
+  background: transparent; border-color: transparent; color: var(--error); font-weight: 600;
+}
+button.reset-all:hover:not(:disabled) { background: var(--error-soft); border-color: transparent; }
+
+/* ---------- 글자 ---------- */
+/* 체크 칸은 글자까지 눌러지는 영역을 넉넉히 (휴대폰에서 손가락으로 누르기 쉽게) */
+.check { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; min-height: 40px; padding-right: 8px; }
+.small { font-size: 0.85rem; color: var(--text-2); }
+.muted { color: var(--muted); font-size: 0.85rem; }
+.hint { margin: 0 0 4px; font-size: 0.86rem; color: var(--muted); line-height: 1.55; }
+.hint b { color: var(--text-2); }
+
+/* 상태 문구: 보통은 흐린 글자, 오류·주의는 색 있는 상자로 만들어 놓치지 않게 한다 */
+.status { font-size: 0.88rem; color: var(--muted); margin: 12px 0 0; }
+.status:empty { display: none; }
+.status.error, .status.warn {
+  padding: 10px 12px 10px 14px; border-radius: var(--radius-sm);
+  border-left: 4px solid currentColor; font-weight: 600; line-height: 1.5;
+}
+.status.error { color: var(--error); background: var(--error-soft); }
+/* 막지는 않지만 꼭 알아야 하는 안내 (예: 1학년이 교양필수를 안 고름) */
+.status.warn { color: var(--warn); background: var(--warn-soft); }
+
+/* ---------- 검색 / 과목 목록 ---------- */
+.search-row { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-top: 14px; }
+.search-row select { max-width: 170px; }
+.search-row + .check { margin-top: 4px; }
+
+.course-list { list-style: none; padding: 0; margin: 10px 0 0; }
+/* 검색 결과는 테두리 상자 안에서 스크롤 (담은 과목 목록과 헷갈리지 않게) */
+#results {
+  max-height: 340px; overflow-y: auto;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--sunken);
+  padding: 4px;
+}
+.course-list li {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 10px; border-radius: 9px;
+}
+#results li:not(.empty):hover { background: var(--card); }
+#results li + li:not(.empty) { border-top: 1px solid var(--line); }
+#results li + li:not(.empty):hover, #results li:hover + li { border-top-color: transparent; }
+.course-list li.dim { opacity: 0.5; }
+.course-list .info { flex: 1; min-width: 0; }
+.course-list .info strong { font-weight: 700; }
+.course-list .meta { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+.course-list .empty { color: var(--muted); font-size: 0.88rem; justify-content: center; padding: 18px 10px; text-align: center; }
+.course-list button { height: 32px; padding: 0 12px; font-size: 0.85rem; }
+
+/* 담은 과목: 하나하나를 작은 카드처럼 */
+.course-list.cart li:not(.empty) {
+  border: 1px solid var(--line); background: var(--card);
+  border-left: 4px solid var(--accent);
+}
+.course-list.cart li + li { margin-top: 8px; }
+.course-list.cart .empty { border: 1px dashed var(--line-strong); border-radius: 12px; }
+#cartCount:not(:empty) {
+  margin-left: 6px; padding: 1px 9px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent); font-size: 0.78rem; font-weight: 700;
+}
+
+/* ---------- 배지 ---------- */
+.badge {
+  display: inline-block; vertical-align: 1px;
+  font-size: 0.72rem; font-weight: 650; line-height: 1.7;
+  padding: 0 8px; margin-right: 3px;
+  border-radius: 999px; background: var(--sunken); border: 1px solid var(--line); color: var(--text-2);
+}
+.badge.taken { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
+.badge.retake { background: var(--warn-soft); border-color: transparent; color: var(--warn); }
+.badge.major { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+
+/* ---------- 공강 요일 칩 ---------- */
+.days { border: none; padding: 0; margin: 18px 0 0; }
+.days legend { font-size: 0.82rem; font-weight: 650; color: var(--text-2); margin-bottom: 8px; padding: 0; }
+#offDays { display: flex; gap: 8px; flex-wrap: wrap; }
+.day-chip input { position: absolute; opacity: 0; pointer-events: none; }
+.day-chip span {
+  display: inline-grid; place-items: center; width: 46px; height: 40px;
+  border: 1px solid var(--line-strong); border-radius: 999px; cursor: pointer;
+  font-weight: 650; background: var(--card); transition: background 0.15s, border-color 0.15s;
+}
+.day-chip span:hover { border-color: var(--accent); }
+.day-chip input:checked + span { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+.day-chip input:focus-visible + span { box-shadow: var(--ring); }
+
+/* ---------- [복수전공 | 부전공] 선택: 라디오를 숨기고 알약 모양 두 칸 버튼으로 ---------- */
+.toggle { border: none; padding: 0; margin: 0; min-width: 0; }
+.toggle legend { font-size: 0.82rem; font-weight: 650; color: var(--text-2); padding: 0; margin-bottom: 6px; }
+.toggle .seg {
+  display: flex; padding: 3px; gap: 3px; height: 42px;
+  border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: var(--sunken);
+}
+.field-row .toggle label { display: block; }
+.toggle input { position: absolute; opacity: 0; pointer-events: none; }
+.toggle span {
+  display: inline-grid; place-items: center; height: 100%; padding: 0 14px;
+  border-radius: 7px; cursor: pointer; font-size: 0.9rem; font-weight: 650; color: var(--text-2);
+  transition: background 0.15s, color 0.15s;
+}
+.toggle input:checked + span { background: var(--card); color: var(--accent); box-shadow: 0 1px 3px rgba(20, 24, 40, 0.15); }
+.toggle input:disabled + span { cursor: not-allowed; opacity: 0.5; }
+.toggle input:focus-visible + span { box-shadow: var(--ring); }
+/* 복수전공·부전공을 고르지 않았을 때(심화전공 등): 어느 쪽도 켜져 보이지 않게 한다 */
+.no-second .toggle .seg { background: transparent; border-style: dashed; }
+.no-second .toggle input:checked + span { background: transparent; color: var(--text-2); box-shadow: none; }
+.second-hint { margin-top: 8px; }
+
+/* ---------- 1학년 교양필수: 과목명 | 분반 선택 ---------- */
+#liberalList { display: grid; gap: 8px; margin-top: 10px; }
+.liberal-row {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--sunken);
+  font-size: 0.9rem;
+}
+.liberal-row .name { flex: 0 0 160px; font-weight: 650; }
+.liberal-row select { flex: 1; min-width: 0; height: 38px; font-size: 0.86rem; }
+
+/* ---------- 전공별 학점: [배지] 전공명 | 최소 ~ 최대 학점 ---------- */
+#majorCredits { display: grid; gap: 8px; margin-top: 10px; }
+.credit-row {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 8px 10px; border: 1px solid var(--line); border-radius: 12px; background: var(--sunken);
+  font-size: 0.9rem; color: var(--text-2);
+}
+.credit-row .name { flex: 1; min-width: 150px; color: var(--text); font-weight: 600; }
+.credit-row input[type="number"] { width: 68px; height: 36px; }
+
+/* ---------- 성적 파일 ---------- */
+.upload-row {
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 10px;
+  padding: 10px; border: 1px dashed var(--line-strong); border-radius: 12px; background: var(--sunken);
+}
+.upload-row input[type="file"] { flex: 1; min-width: 0; font-size: 0.85rem; color: var(--text-2); }
+.upload-row input[type="file"]::file-selector-button {
+  margin-right: 10px; height: 32px; padding: 0 12px; cursor: pointer;
+  border: 1px solid var(--line-strong); border-radius: 8px; background: var(--card); color: var(--text); font: inherit; font-weight: 600;
+}
+
+/* ---------- 결과 카드 ---------- */
+.result { position: sticky; top: 20px; }
+.result-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.result-head h2 { margin: 0; }
+.sort { font-size: 0.82rem; font-weight: 650; color: var(--text-2); display: flex; align-items: center; gap: 8px; }
+.sort select { height: 38px; }
+
+/* 순위 넘기기: 가운데 순위 정보를 알약 모양으로 */
+.pager { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 16px 0 14px; }
+.pager button { height: 38px; min-width: 64px; }
+.pager span {
+  flex: 1; text-align: center; font-size: 0.88rem; font-weight: 600; color: var(--text-2);
+  padding: 7px 12px; border-radius: 999px; background: var(--sunken); border: 1px solid var(--line);
+}
+
+/* ---------- 시간표 격자: 왼쪽 시간 눈금 + 요일 칸 ---------- */
+.grid {
+  --row: 50px;
+  display: grid;
+  grid-template-columns: 38px repeat(var(--days), minmax(0, 1fr));
+  grid-template-rows: 34px calc(var(--hours) * var(--row));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--card);
+}
+.corner, .day-head { border-bottom: 1px solid var(--line); background: var(--sunken); }
+.day-head { display: grid; place-items: center; font-size: 0.85rem; font-weight: 750; color: var(--text-2); }
+.hours { display: grid; grid-template-rows: repeat(var(--hours), var(--row)); font-size: 0.7rem; color: var(--muted); background: var(--sunken); }
+.hours div { padding: 3px 6px 0 0; text-align: right; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.hours div:first-child { border-top: none; }
+.day-col {
+  position: relative;
+  border-left: 1px solid var(--line);
+  /* 한 시간마다 옅은 가로줄 */
+  background-image: linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 100% var(--row);
+}
+.block {
+  position: absolute; left: 3px; right: 3px;
+  border-radius: 8px; padding: 5px 7px 5px 9px;
+  overflow: hidden; font-size: 0.75rem; line-height: 1.3;
+  color: var(--block-text);
+  border-left: 4px solid var(--edge, transparent);
+  box-shadow: 0 1px 2px rgba(20, 24, 40, 0.08);
+}
+.block strong { display: block; font-weight: 750; word-break: keep-all; }
+.block span { display: block; margin-top: 2px; opacity: 0.72; font-size: 0.7rem; }
+/* 수업 색: 바탕색 + 왼쪽 띠 색(--edge). 결과 목록의 동그라미(.dot)도 같은 class를 쓴다 */
+.c0 { background: var(--c0); --edge: var(--c0e); } .c1 { background: var(--c1); --edge: var(--c1e); }
+.c2 { background: var(--c2); --edge: var(--c2e); } .c3 { background: var(--c3); --edge: var(--c3e); }
+.c4 { background: var(--c4); --edge: var(--c4e); } .c5 { background: var(--c5); --edge: var(--c5e); }
+.c6 { background: var(--c6); --edge: var(--c6e); } .c7 { background: var(--c7); --edge: var(--c7e); }
+
+/* ---------- 결과 과목 목록 ---------- */
+.summary { list-style: none; padding: 0; margin: 16px 0 0; font-size: 0.9rem; display: grid; gap: 6px; }
+.summary li {
+  padding: 9px 12px; display: flex; align-items: center; gap: 6px 8px; flex-wrap: wrap;
+  border: 1px solid var(--line); border-radius: 10px; font-weight: 650;
+}
+.summary li .muted { font-weight: 400; flex-basis: 100%; padding-left: 20px; font-size: 0.8rem; }
+.dot { width: 12px; height: 12px; border-radius: 4px; flex: none; background: var(--edge); }
+
+/* ---------- 이번 학기 공휴일 ---------- */
+.holidays h3 .muted { font-weight: 500; }
+.holidays #holidayRetry { margin-top: 8px; }
+.holiday-list { list-style: none; padding: 0; margin: 8px 0 0; font-size: 0.88rem; display: grid; gap: 4px; }
+.holiday-list li { padding: 6px 2px; line-height: 1.5; border-bottom: 1px solid var(--line); }
+.holiday-list li:last-child { border-bottom: none; }
+.holiday-list .date { font-weight: 650; }
+.holiday-list .off { color: var(--error); }
+/* 그날 수업이 없는 공휴일은 신경 쓸 필요가 없으니 흐리게 보여 준다 */
+.holiday-list li.none { color: var(--muted); }
+.holidays .source { margin: 10px 0 0; font-size: 0.78rem; }
+.holidays .source a { color: inherit; }
+
+/* ---------- 좁은 화면 (휴대폰) ---------- */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; padding: 16px; gap: 16px; }
+  .top { padding: 24px 16px 0; }
+  .card { padding: 18px 16px; }
+  .result { position: static; }
+  .grid { --row: 42px; grid-template-columns: 30px repeat(var(--days), minmax(0, 1fr)); }
+  .block { font-size: 0.68rem; padding: 3px 4px 3px 6px; border-left-width: 3px; }
+  .block span { display: none; }
+  .block strong { word-break: break-all; }
+  .liberal-row .name { flex-basis: 100%; }
+  .search-row select { max-width: 130px; }
+  /* 순위 정보가 이전/다음 버튼 사이에서 세 줄로 접히지 않게 한 줄 위로 올리고, 버튼은 그 아래 양쪽에 둔다 */
+  .pager { flex-wrap: wrap; }
+  .pager span { order: -1; flex-basis: 100%; }
+  .pager button { flex: 1; }
+}
+
+/* ---------- 아주 좁은 화면 (폭 480px 이하 휴대폰) ---------- */
+@media (max-width: 480px) {
+  /* 소속·관심 전공·학년이 한 줄에 끼어 전공 이름이 잘리지 않게, 넓은 칸은 한 줄씩 쓴다 */
+  .field-row .grow { flex-basis: 100%; }
+  /* 요일 5칸을 320~400px에 넣으면 칸이 24~38px뿐이라, 글자·여백을 줄여 과목명이 덜 잘리게 한다.
+     전체 이름은 시간표 아래 목록에 나온다 */
+  .grid { grid-template-columns: 26px repeat(var(--days), minmax(0, 1fr)); }
+  .hours div { padding-right: 3px; }
+  .block { left: 1px; right: 1px; padding: 2px 2px 2px 4px; font-size: 0.62rem; line-height: 1.15; border-radius: 5px; }
+  .block strong { font-weight: 700; }
+  .day-head { font-size: 0.78rem; }
+}

@@ -18,6 +18,7 @@ import { fetchSemesterHolidays, formatHoliday, affectedCourses } from "./holiday
 import * as store from "./storage.js";
 import { COLORS, layoutGrid } from "./grid.js";
 import * as saved from "./saved.js";
+import { imageFileName, downloadTimetablePNG } from "./image.js";
 
 const $ = (id) => document.getElementById(id);
 const MAX_SEARCH_RESULTS = 60;
@@ -1107,7 +1108,7 @@ function renderResult() {
 
 /**
  * 격자 하나를 그린다. 결과 격자와 저장한 시간표 격자가 같은 함수를 쓰고,
- * 블록 위치는 layoutGrid(grid.js) 결과를 쓴다 → 결과와 저장한 시간표가 같은 칸에 그려진다
+ * 블록 위치는 PNG 내보내기와 같은 layoutGrid(grid.js) 결과를 쓴다 → 화면·저장·이미지가 같은 칸에 그려진다
  */
 function renderGrid(el, schedule) {
   const { days, dayStart, hours, blocks } = layoutGrid(schedule);
@@ -1127,7 +1128,7 @@ function renderGrid(el, schedule) {
   el.innerHTML = html;
 }
 
-// ---------- 시간표 저장 (F11) ----------
+// ---------- 시간표 저장 (F11) / PNG 내보내기 (F12) ----------
 
 /** 저장·내보내기 안내 문구. kind는 showStatus와 같다 */
 function showAction(msg, kind = false) {
@@ -1160,6 +1161,27 @@ function onSaveSchedule() {
   }
   renderSaveButton();
   renderSaved();
+}
+
+/** 격자 데이터로 PNG를 만들어 내려받는다. 만든 그리기 데이터는 이벤트로 알려 준다(화면 점검이 격자와 비교한다) */
+async function exportPng(schedule, rank, onError) {
+  const fileName = imageFileName(rank, totalCredit(schedule));
+  try {
+    const img = await downloadTimetablePNG(layoutGrid(schedule), fileName);
+    document.dispatchEvent(new CustomEvent("timetable:png", { detail: { fileName, blocks: img.blocks } }));
+    return fileName;
+  } catch (err) {
+    console.info("PNG를 만들지 못했습니다:", err.message);
+    onError(`이미지를 만들지 못했습니다: ${err.message}`);
+    return "";
+  }
+}
+
+async function onExportPng() {
+  const schedule = state.schedules[state.page];
+  if (!schedule) return;
+  const fileName = await exportPng(schedule, state.page + 1, (msg) => showAction(msg, "error"));
+  if (fileName) showAction(`${fileName} 파일을 내려받았습니다.`);
 }
 
 /** "11/20 14:03" */
@@ -1218,6 +1240,7 @@ function renderSaved() {
 
 function bindSavedEvents() {
   $("saveSchedule").addEventListener("click", onSaveSchedule);
+  $("exportPng").addEventListener("click", onExportPng);
   $("savedList").addEventListener("click", (e) => {
     const openBtn = e.target.closest("button[data-open]");
     const deleteBtn = e.target.closest("button[data-delete]");
@@ -1236,6 +1259,15 @@ function bindSavedEvents() {
   $("savedClose").addEventListener("click", () => {
     state.savedOpen = "";
     renderSaved();
+  });
+  $("savedExport").addEventListener("click", async () => {
+    const open = state.saved.find((e) => saved.savedKey(e.ids) === state.savedOpen);
+    if (!open) return;
+    const note = $("savedNote");
+    await exportPng(saved.restoreSchedule(open).schedule, open.rank, (msg) => {
+      note.hidden = false;
+      note.textContent = msg;
+    });
   });
 }
 

@@ -153,9 +153,10 @@
         <span id="pageInfo"></span>
         <button id="next" type="button" class="ghost" aria-label="다음 조합">다음</button>
       </div>
-      <!-- 지금 보고 있는 순위의 시간표를 저장한다(F11) -->
+      <!-- 지금 보고 있는 순위의 시간표를 저장하거나(F11) PNG로 내려받는다(F12) -->
       <div id="resultActions" class="result-actions" hidden>
         <button id="saveSchedule" type="button" class="ghost">이 시간표 저장</button>
+        <button id="exportPng" type="button" class="ghost">PNG로 저장</button>
       </div>
       <p id="actionStatus" class="status" aria-live="polite"></p>
       <div id="grid" class="grid" hidden></div>
@@ -170,6 +171,7 @@
           <div class="saved-view-head">
             <strong id="savedTitle"></strong>
             <div class="saved-view-actions">
+              <button id="savedExport" type="button" class="ghost">PNG로 저장</button>
               <button id="savedClose" type="button" class="ghost">닫기</button>
             </div>
           </div>

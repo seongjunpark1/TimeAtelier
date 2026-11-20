@@ -153,8 +153,31 @@
         <span id="pageInfo"></span>
         <button id="next" type="button" class="ghost" aria-label="다음 조합">다음</button>
       </div>
+      <!-- 지금 보고 있는 순위의 시간표를 저장한다(F11) -->
+      <div id="resultActions" class="result-actions" hidden>
+        <button id="saveSchedule" type="button" class="ghost">이 시간표 저장</button>
+      </div>
+      <p id="actionStatus" class="status" aria-live="polite"></p>
       <div id="grid" class="grid" hidden></div>
       <ul id="summary" class="summary"></ul>
+
+      <!-- 저장한 시간표: 이 브라우저(localStorage)에만 남는다. 과목코드·분반과 과목 정보만 저장하고 성적은 저장하지 않는다 -->
+      <div id="savedArea" class="saved">
+        <h3>저장한 시간표 <span id="savedCount" class="muted"></span></h3>
+        <ul id="savedList" class="saved-list"></ul>
+        <!-- 목록에서 하나를 누르면 app.js가 결과와 같은 모양의 격자로 보여 준다 -->
+        <div id="savedView" class="saved-view" hidden>
+          <div class="saved-view-head">
+            <strong id="savedTitle"></strong>
+            <div class="saved-view-actions">
+              <button id="savedClose" type="button" class="ghost">닫기</button>
+            </div>
+          </div>
+          <p id="savedNote" class="status warn" hidden></p>
+          <div id="savedGrid" class="grid"></div>
+          <ul id="savedSummary" class="summary"></ul>
+        </div>
+      </div>
 
       <!-- 이번 학기 공휴일: app.js가 페이지를 열 때 따로(백그라운드로) 불러와 채운다.
            불러오는 중이거나 실패해도 위의 시간표 만들기에는 영향이 없다 -->

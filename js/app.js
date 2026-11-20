@@ -16,6 +16,8 @@ import {
 import { extractTakenCourses, autoFillExcludedCodes } from "./grades.js";
 import { fetchSemesterHolidays, formatHoliday, affectedCourses } from "./holidays.js";
 import * as store from "./storage.js";
+import { COLORS, layoutGrid } from "./grid.js";
+import * as saved from "./saved.js";
 
 const $ = (id) => document.getElementById(id);
 const MAX_SEARCH_RESULTS = 60;
@@ -60,6 +62,10 @@ const state = {
   // 이번 학기 공휴일. status: "loading"(불러오는 중) / "error"(실패) / "ok"(성공)
   // 시간표 계산과 따로 움직이므로, 어떤 상태여도 시간표 만들기는 그대로 된다
   holidays: { status: "loading", list: [], semester: null },
+  semester: "", // courses.json의 학기 이름 (예: "2026-2"). 저장한 시간표에 함께 적는다
+  // 저장한 시간표(F11). 깨진 항목은 saved.js가 빼고 읽는다. savedOpen = 지금 펼쳐 본 항목의 열쇠(savedKey)
+  saved: saved.loadSaved(),
+  savedOpen: "",
 };
 
 // ---------- 데이터 불러오기 ----------
@@ -80,6 +86,7 @@ async function init() {
     const data = await coursesRes.json();
     state.courses = data.courses;
     state.byId = new Map(data.courses.map((c) => [c.id, c]));
+    state.semester = data.semester;
     state.codeMap = mapRes.ok ? (await mapRes.json()).map : {};
     // 규칙 파일이 없어도 시간표는 짤 수 있어야 하므로, 실패하면 기본값(검사 안 함)을 그대로 쓴다
     if (rulesRes.ok) state.rules = { ...state.rules, ...(await rulesRes.json()) };
@@ -108,6 +115,7 @@ async function init() {
     renderTakenStatus();
     renderChecks();
     renderPoolInfo();
+    renderSaved();
   } catch (err) {
     // 저장값 검사를 통과했는데도 예상 못 한 이유로 실패하면, 화면이 조용히 멈추지 않게 해결 방법을 알려 준다
     showStatus("화면을 준비하다 오류가 났습니다. 맨 아래 '전체 초기화'를 눌러 저장된 설정을 지운 뒤 다시 해 보세요.", true);
@@ -118,7 +126,7 @@ async function init() {
 /** 전체 초기화: 이 앱의 저장값을 모두 지우고 페이지를 다시 연다 (처음 연 것과 똑같은 상태가 확실히 보장된다) */
 function bindResetAll() {
   $("resetAll").addEventListener("click", () => {
-    if (!confirm("담은 과목, 불러온 이수 과목, 교양필수 분반, 전공·학년·학점·공강 조건을 모두 지웁니다. 계속할까요?")) return;
+    if (!confirm("담은 과목, 불러온 이수 과목, 교양필수 분반, 전공·학년·학점·공강 조건, 저장한 시간표를 모두 지웁니다. 계속할까요?")) return;
     store.clearAll();
     location.reload();
   });
@@ -604,6 +612,7 @@ function bindEvents() {
     saveConditions();
     if (state.schedules.length) onGenerate();
   });
+  bindSavedEvents();
   $("prev").addEventListener("click", () => movePage(-1));
   $("next").addEventListener("click", () => movePage(1));
   document.addEventListener("keydown", (e) => {
@@ -927,6 +936,7 @@ function onGenerate() {
 
   state.schedules = result.schedules;
   state.page = 0;
+  showAction(""); // 이전 결과에 대한 '저장했습니다' 같은 안내는 지운다
   state.resultKey = inputKey();
   renderResult();
   renderStale();
@@ -1054,7 +1064,6 @@ function renderHolidays() {
 }
 
 // ---------- 시간표 격자 ----------
-const COLORS = 8;
 
 function renderResult() {
   renderHolidays(); // 결과가 바뀌거나 순위를 넘기면 공휴일 수업 목록도 그 시간표 기준으로 바뀐다
@@ -1062,6 +1071,7 @@ function renderResult() {
   const has = state.schedules.length > 0;
   grid.hidden = !has;
   $("pager").hidden = !has;
+  $("resultActions").hidden = !has;
   $("summary").innerHTML = "";
   if (!has) return;
 
@@ -1082,28 +1092,8 @@ function renderResult() {
     (perMajor.length ? ` (${perMajor.join(" · ")})` : "") +
     ` · 공강 ${countFreeWeekdays(schedule)}일`;
 
-  const slots = schedule.flatMap((c, i) => c.times.map((t) => ({ ...t, course: c, color: i % COLORS })));
-  const days = slots.some((s) => s.day === "토") ? DAYS : DAYS.slice(0, 5);
-  const dayStart = Math.min(9 * 60, ...slots.map((s) => Math.floor(s.start / 60) * 60));
-  const dayEnd = Math.max(18 * 60, ...slots.map((s) => Math.ceil(s.end / 60) * 60));
-  const hours = (dayEnd - dayStart) / 60;
-
-  grid.style.setProperty("--days", days.length);
-  grid.style.setProperty("--hours", hours);
-
-  let html = `<div class="corner"></div>` + days.map((d) => `<div class="day-head">${d}</div>`).join("");
-  html += `<div class="hours">${Array.from({ length: hours }, (_, i) => `<div>${dayStart / 60 + i}</div>`).join("")}</div>`;
-  for (const day of days) {
-    html += `<div class="day-col">`;
-    for (const s of slots.filter((x) => x.day === day)) {
-      const top = ((s.start - dayStart) / (dayEnd - dayStart)) * 100;
-      const height = ((s.end - s.start) / (dayEnd - dayStart)) * 100;
-      html += `<div class="block c${s.color}" style="top:${top}%;height:${height}%" title="${escapeHTML(s.course.name)} ${toHHMM(s.start)}~${toHHMM(s.end)}">
-        <strong>${escapeHTML(s.course.name)}</strong><span>${escapeHTML(s.room ?? "")} · ${toHHMM(s.start)}</span></div>`;
-    }
-    html += `</div>`;
-  }
-  grid.innerHTML = html;
+  renderGrid(grid, schedule);
+  renderSaveButton();
 
   $("summary").innerHTML = schedule
     .map(
@@ -1113,6 +1103,140 @@ function renderResult() {
         <span class="muted">${escapeHTML(c.code)}-${escapeHTML(c.section)} · ${escapeHTML(c.type)} · ${c.credit}학점 · ${escapeHTML(professorLabel(c))}${c.times.length ? "" : " · 시간 미정"}</span></li>`
     )
     .join("");
+}
+
+/**
+ * 격자 하나를 그린다. 결과 격자와 저장한 시간표 격자가 같은 함수를 쓰고,
+ * 블록 위치는 layoutGrid(grid.js) 결과를 쓴다 → 결과와 저장한 시간표가 같은 칸에 그려진다
+ */
+function renderGrid(el, schedule) {
+  const { days, dayStart, hours, blocks } = layoutGrid(schedule);
+  el.style.setProperty("--days", days.length);
+  el.style.setProperty("--hours", hours);
+
+  let html = `<div class="corner"></div>` + days.map((d) => `<div class="day-head">${d}</div>`).join("");
+  html += `<div class="hours">${Array.from({ length: hours }, (_, i) => `<div>${dayStart / 60 + i}</div>`).join("")}</div>`;
+  days.forEach((day, col) => {
+    html += `<div class="day-col">`;
+    for (const b of blocks.filter((x) => x.col === col)) {
+      html += `<div class="block c${b.color}" style="top:${b.top * 100}%;height:${b.height * 100}%" title="${escapeHTML(b.name)} ${b.startLabel}~${b.endLabel}">
+        <strong>${escapeHTML(b.name)}</strong><span>${escapeHTML(b.room)} · ${b.startLabel}</span></div>`;
+    }
+    html += `</div>`;
+  });
+  el.innerHTML = html;
+}
+
+// ---------- 시간표 저장 (F11) ----------
+
+/** 저장·내보내기 안내 문구. kind는 showStatus와 같다 */
+function showAction(msg, kind = false) {
+  $("actionStatus").textContent = msg;
+  $("actionStatus").className = `status${kind === "error" ? " error" : kind === "warn" ? " warn" : ""}`;
+}
+
+/** 지금 보고 있는 순위가 이미 저장돼 있으면 '저장됨'으로 잠가 같은 조합을 두 번 저장하지 않게 한다 */
+function renderSaveButton() {
+  const schedule = state.schedules[state.page];
+  const done = !!schedule && saved.isSaved(state.saved, schedule);
+  $("saveSchedule").disabled = done;
+  $("saveSchedule").textContent = done ? "저장됨" : "이 시간표 저장";
+}
+
+function onSaveSchedule() {
+  const schedule = state.schedules[state.page];
+  if (!schedule) return;
+  const entry = saved.makeSavedEntry(schedule, { rank: state.page + 1, semester: state.semester });
+  const { list, status } = saved.addSaved(state.saved, entry);
+  if (status === "duplicate") {
+    showAction("이미 저장한 조합입니다.");
+  } else if (status === "full") {
+    showAction(`시간표는 ${saved.MAX_SAVED}개까지 저장할 수 있습니다. 아래 '저장한 시간표'에서 하나를 삭제한 뒤 다시 저장하세요.`, "warn");
+  } else {
+    state.saved = list;
+    // 저장소가 막혀 있어도(사생활 보호 모드·용량 초과) 앱은 그대로 두고, 이 창에서만 남는다고 알린다
+    if (saved.persistSaved(state.saved)) showAction(`${state.page + 1}위 시간표를 저장했습니다.`);
+    else showAction("브라우저 저장소에 쓰지 못해, 이 창을 닫으면 저장한 시간표가 사라집니다.", "warn");
+  }
+  renderSaveButton();
+  renderSaved();
+}
+
+/** "11/20 14:03" */
+function formatSavedAt(ms) {
+  const d = new Date(ms);
+  const two = (n) => String(n).padStart(2, "0");
+  return `${d.getMonth() + 1}/${d.getDate()} ${two(d.getHours())}:${two(d.getMinutes())}`;
+}
+
+/** 저장 항목 제목: '1위 · 16학점 · 공강 2일' */
+function savedLabel(entry) {
+  return `${entry.rank}위 · ${entry.credit}학점 · 공강 ${countFreeWeekdays(entry.courses)}일`;
+}
+
+/** 저장한 시간표 목록을 그린다. 펼쳐 본 항목이 지워졌으면 펼친 격자도 닫는다 */
+function renderSaved() {
+  const list = state.saved;
+  $("savedCount").textContent = `(${list.length}/${saved.MAX_SAVED})`;
+  $("savedList").innerHTML =
+    list
+      .map((e) => {
+        const key = escapeHTML(saved.savedKey(e.ids));
+        const names = e.courses.map((c) => c.name);
+        const preview = names.slice(0, 3).join(", ") + (names.length > 3 ? ` 외 ${names.length - 3}과목` : "");
+        const semester = e.semester ? `${e.semester}학기 · ` : "";
+        return `<li>
+          <button type="button" class="ghost open${saved.savedKey(e.ids) === state.savedOpen ? " current" : ""}" data-open="${key}">
+            ${escapeHTML(savedLabel(e))}<span class="muted">${escapeHTML(semester + formatSavedAt(e.savedAt))} · ${escapeHTML(preview)}</span>
+          </button>
+          <button type="button" class="ghost delete" data-delete="${key}" aria-label="${escapeHTML(savedLabel(e))} 저장한 시간표 삭제">삭제</button>
+        </li>`;
+      })
+      .join("") || `<li class="empty">저장한 시간표가 없습니다. 결과에서 '이 시간표 저장'을 누르면 여기에 남아요.</li>`;
+
+  const open = list.find((e) => saved.savedKey(e.ids) === state.savedOpen);
+  $("savedView").hidden = !open;
+  if (!open) {
+    state.savedOpen = "";
+    return;
+  }
+  const { schedule, missing } = saved.restoreSchedule(open, state.byId);
+  $("savedTitle").textContent = savedLabel(open);
+  // 다음 학기에 강좌 데이터가 바뀌어도 저장할 때의 스냅숏으로 그린다. 없어진 과목은 알려 준다
+  $("savedNote").hidden = !missing.length;
+  $("savedNote").textContent = missing.length
+    ? `이번 학기 강좌 목록에 없는 과목이 있어 저장할 때의 정보로 보여 줍니다: ${missing.join(", ")}`
+    : "";
+  renderGrid($("savedGrid"), schedule);
+  $("savedSummary").innerHTML = schedule
+    .map(
+      (c, i) => `<li><span class="dot c${i % COLORS}"></span>${escapeHTML(c.name)}
+        <span class="muted">${escapeHTML(c.code)}-${escapeHTML(c.section)} · ${escapeHTML(c.type)} · ${c.credit}학점 · ${escapeHTML(professorLabel(c))}${c.times.length ? "" : " · 시간 미정"}</span></li>`
+    )
+    .join("");
+}
+
+function bindSavedEvents() {
+  $("saveSchedule").addEventListener("click", onSaveSchedule);
+  $("savedList").addEventListener("click", (e) => {
+    const openBtn = e.target.closest("button[data-open]");
+    const deleteBtn = e.target.closest("button[data-delete]");
+    if (openBtn) {
+      // 이미 펼친 항목을 다시 누르면 접는다
+      state.savedOpen = state.savedOpen === openBtn.dataset.open ? "" : openBtn.dataset.open;
+    } else if (deleteBtn) {
+      state.saved = saved.removeSaved(state.saved, deleteBtn.dataset.delete);
+      if (!saved.persistSaved(state.saved)) showAction("브라우저 저장소에 쓰지 못해, 새로고침하면 지운 시간표가 다시 보일 수 있습니다.", "warn");
+      renderSaveButton(); // 지운 조합을 보고 있었다면 다시 저장할 수 있게
+    } else {
+      return;
+    }
+    renderSaved();
+  });
+  $("savedClose").addEventListener("click", () => {
+    state.savedOpen = "";
+    renderSaved();
+  });
 }
 
 init();

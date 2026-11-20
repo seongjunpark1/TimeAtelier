@@ -59,6 +59,8 @@ let server, chrome, profileDir, ws, URL_;
 let msgId = 0;
 const pending = new Map();
 const logs = []; // 콘솔 오류·경고와 잡히지 않은 예외
+const downloads = []; // 내려받기 { guid, name, state } (PNG 내보내기 점검용)
+let downloadDir;
 
 function send(method, params = {}) {
   return new Promise((resolve, reject) => {
@@ -122,6 +124,8 @@ const HELPERS = `
   window.visible = (id) => $t(id).getClientRects().length > 0; // hidden 속성이 아니라 실제로 그려졌는지
   window.pickLib = (code, id) => { const s = document.querySelector('#liberalList select[data-code="' + code + '"]'); s.value = id; s.dispatchEvent(new Event("change", { bubbles: true })); return s.value; };
   window.addToCart = (id) => { $t("category").value = ""; $t("search").value = id.split("-")[0]; $t("search").dispatchEvent(new Event("input")); const b = document.querySelector('#results button[data-add="' + id + '"]'); if (!b || b.disabled) return false; b.click(); $t("search").value = ""; $t("search").dispatchEvent(new Event("input")); return true; };
+  window.gridBlocks = (id) => { const heads = [...$t(id).querySelectorAll(".day-head")].map((d) => d.textContent); return [...$t(id).querySelectorAll(".day-col")].flatMap((col, i) => [...col.querySelectorAll(".block")].map((b) => ({ day: heads[i], name: b.querySelector("strong").textContent, top: b.style.top, height: b.style.height, color: b.className }))); };
+  window.waitPng = () => new Promise((resolve) => document.addEventListener("timetable:png", (e) => resolve(e.detail), { once: true }));
   window.allPages = () => { const out = []; for (let p = 0; p < 20 && !$t("pager").hidden; p++) { out.push({ info: $t("pageInfo").textContent, badges: [...document.querySelectorAll("#summary .badge.major")].map((b) => b.textContent), text: $t("summary").textContent }); $t("next").click(); } return out; };
   true;
 `;
@@ -184,11 +188,19 @@ before(async () => {
       logs.push(`${m.params.type}: ${m.params.args.map((a) => a.value ?? a.description).join(" ")}`);
     }
     if (m.method === "Fetch.requestPaused") answerHolidayRequest(m.params);
+    if (m.method === "Page.downloadWillBegin") downloads.push({ guid: m.params.guid, name: m.params.suggestedFilename, state: "start" });
+    if (m.method === "Page.downloadProgress") {
+      const d = downloads.find((x) => x.guid === m.params.guid);
+      if (d) d.state = m.params.state;
+    }
     if (m.method === "Runtime.exceptionThrown") logs.push(`exception: ${m.params.exceptionDetails.exception?.description}`);
   });
   await send("Runtime.enable");
   await send("Page.enable");
   await send("Fetch.enable", { patterns: [{ urlPattern: "https://date.nager.at/*" }] });
+  // PNG 내보내기 점검: 내려받은 파일을 임시 프로필 폴더 안에 받아 확인한다 (테스트가 끝나면 함께 지워진다)
+  downloadDir = path.join(profileDir, "downloads");
+  await send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: downloadDir });
 });
 
 after(() => {
@@ -497,6 +509,158 @@ test("화면 점검", { skip: SKIP }, async (t) => {
     // 붙잡아 둔 요청을 정리하고 기본 모드로 되돌린다
     holidayMode = "fixture";
     for (const requestId of hungRequests.splice(0)) await send("Fetch.failRequest", { requestId, errorReason: "Aborted" });
+  });
+
+  // ---------- 시간표 저장(F11) · PNG 내보내기(F12) · 375px(N4) ----------
+  const makeResult = `setSel("myGrade","3"); setSel("mainMajor","소프트웨어융합전공"); $t("generate").click(); true`;
+
+  await t.test("F11 저장 → 새로고침 → 목록에 남아 있고, 열면 같은 과목이 같은 칸에 그려진다", async () => {
+    holidayMode = "fixture";
+    await fresh();
+    assert.match(await ev(`$t("savedList").textContent`), /저장한 시간표가 없습니다/);
+    await ev(makeResult);
+    await ev(`$t("next").click(); true`); // 2위를 저장한다 (1위가 아니어도 지금 보고 있는 순위가 저장되는지)
+    const screen = await ev(`gridBlocks("grid")`);
+    const info = await ev(`$t("pageInfo").textContent`);
+    assert.ok(screen.length > 0);
+    await ev(`$t("saveSchedule").click(); true`);
+    assert.match(await ev(`$t("actionStatus").textContent`), /2위 시간표를 저장했습니다/);
+    // 같은 조합은 두 번 저장할 수 없게 버튼이 잠긴다
+    assert.equal(await ev(`$t("saveSchedule").disabled`), true);
+    assert.equal(await ev(`$t("saveSchedule").textContent`), "저장됨");
+
+    await reload();
+    assert.equal(await ev(`$t("savedList").querySelectorAll("button[data-open]").length`), 1);
+    assert.equal(await ev(`$t("savedCount").textContent`), "(1/10)");
+    assert.equal(await ev(`visible("savedView")`), false);
+    await ev(`$t("savedList").querySelector("button[data-open]").click(); true`);
+    assert.equal(await ev(`visible("savedView")`), true);
+    assert.equal(await ev(`$t("savedTitle").textContent`), info.replace(/ \/ \d+위/, "").replace(/ \(.*\)/, ""));
+    assert.deepEqual(await ev(`gridBlocks("savedGrid")`), screen);
+    assert.equal(await ev(`visible("savedNote")`), false); // 이번 학기 데이터에 다 있는 과목
+
+    // 다시 만들어 2위로 가면 이미 저장한 조합이라 '저장됨'으로 보인다
+    await ev(makeResult);
+    await ev(`$t("next").click(); true`);
+    assert.equal(await ev(`$t("saveSchedule").textContent`), "저장됨");
+  });
+
+  await t.test("F11 최대 10개: 넘으면 저장하지 않고 안내한다", async () => {
+    // 1위, 3~10위를 더 저장해 10개를 채운다 (2위는 앞에서 저장함)
+    await ev(`$t("prev").click(); true`);
+    for (let p = 1; p <= 10; p++) {
+      if (p !== 2) await ev(`$t("saveSchedule").click(); true`);
+      await ev(`$t("next").click(); true`);
+    }
+    assert.equal(await ev(`$t("savedCount").textContent`), "(10/10)");
+    assert.match(await ev(`$t("pageInfo").textContent`), /^11위/);
+    await ev(`$t("saveSchedule").click(); true`);
+    assert.match(await ev(`$t("actionStatus").textContent`), /10개까지 저장할 수 있습니다/);
+    assert.equal(await ev(`$t("savedList").querySelectorAll("button[data-open]").length`), 10);
+  });
+
+  await t.test("F11 삭제하면 목록에서 사라지고, 새로고침해도 돌아오지 않는다", async () => {
+    const titles = () => ev(`[...$t("savedList").querySelectorAll("button[data-open]")].map((b) => b.dataset.open)`);
+    const before = await titles();
+    // 펼쳐 본 항목을 지우면 펼친 격자도 닫힌다
+    await ev(`$t("savedList").querySelector("button[data-open]").click(); true`);
+    assert.equal(await ev(`visible("savedView")`), true);
+    await ev(`$t("savedList").querySelector("button[data-delete]").click(); true`);
+    const after = await titles();
+    assert.equal(after.length, before.length - 1);
+    assert.ok(!after.includes(before[0]));
+    assert.equal(await ev(`visible("savedView")`), false);
+    await reload();
+    assert.deepEqual(await titles(), after);
+  });
+
+  await t.test("F12 PNG 버튼: 내려받기가 일어나고, 그리기 데이터의 블록 수·과목명이 화면 격자와 같다", async () => {
+    await ev(makeResult);
+    const screen = await ev(`gridBlocks("grid")`);
+    const credit = (await ev(`$t("pageInfo").textContent`)).match(/(\d+)학점/)[1];
+    const detail = await ev(`(async () => { const p = waitPng(); $t("exportPng").click(); return await p; })()`);
+    assert.equal(detail.fileName, `시간표공방_1위_${credit}학점.png`);
+    assert.equal(detail.blocks.length, screen.length);
+    assert.deepEqual(detail.blocks.map((b) => [b.day, b.name]), screen.map((b) => [b.day, b.name]));
+    // 화면과 같은 칸: 격자 높이에 대한 위치 비율이 같다
+    // (브라우저가 style의 % 값을 소수 몇 자리로 줄여 보관하므로 0.001% 차이까지는 같은 칸으로 본다)
+    detail.blocks.forEach((b, i) => {
+      const near = (a, css) => Math.abs(a * 100 - parseFloat(css)) < 1e-3;
+      assert.ok(near(b.top, screen[i].top) && near(b.height, screen[i].height), `${b.name}: ${b.top * 100}/${screen[i].top} ${b.height * 100}/${screen[i].height}`);
+    });
+    assert.match(await ev(`$t("actionStatus").textContent`), /내려받았습니다/);
+
+    // Chrome이 실제로 파일을 받았는지, PNG인지, 2배 이상으로 그렸는지 확인한다
+    let d;
+    for (let i = 0; i < 100 && !(d = downloads.find((x) => x.name === detail.fileName && x.state === "completed")); i++) await sleep(50);
+    assert.ok(d, `내려받기가 일어나지 않음: ${JSON.stringify(downloads)}`);
+    const png = readFileSync(path.join(downloadDir, detail.fileName));
+    assert.equal(png.subarray(1, 4).toString(), "PNG");
+    assert.ok(png.readUInt32BE(16) >= 760 * 2, `가로 ${png.readUInt32BE(16)}px`); // IHDR의 가로 크기
+
+    // 저장한 시간표에서도 PNG로 내려받을 수 있다
+    await ev(`$t("savedList").querySelector("button[data-open]").click(); true`);
+    const savedScreen = await ev(`gridBlocks("savedGrid")`);
+    const saved = await ev(`(async () => { const p = waitPng(); $t("savedExport").click(); return await p; })()`);
+    assert.match(saved.fileName, /^시간표공방_\d+위_\d+학점\.png$/);
+    assert.deepEqual(saved.blocks.map((b) => [b.day, b.name]), savedScreen.map((b) => [b.day, b.name]));
+  });
+
+  await t.test("저장한 시간표 값이 손상돼도 앱이 멈추지 않고 빈 목록으로 시작한다", async () => {
+    await ev(`localStorage.setItem("timetable-maker:saved", '{"x":1}'); true`);
+    const logStart = logs.length;
+    await reload();
+    assert.deepEqual(logs.slice(logStart), []);
+    assert.equal(await ev(`$t("savedCount").textContent`), "(0/10)");
+  });
+
+  await t.test("localStorage에 성적·등급 값(A+, B0, D0, F, NP 등)이 저장되지 않는다", async () => {
+    await fresh();
+    // 가짜 성적 파일을 올린다 (실제 성적 아님)
+    const csv = "No,년도,학기,과목코드,과목명,이수구분,학점,등급\n1,2031,2학기,TS90001,가짜1,전공선택,3,A+\n2,2031,2학기,TS90002,가짜2,전공선택,3,B0\n3,2031,2학기,TS90003,가짜3,전공선택,3,D0\n4,2031,2학기,TS90004,가짜4,전공선택,3,F\n5,2031,2학기,TS90005,가짜5,교양선택,0,NP\n6,2031,2학기,TS90006,가짜6,교양선택,0,P\n";
+    await ev(`(() => { const dt = new DataTransfer(); dt.items.add(new File([${JSON.stringify(csv)}], "fake.csv", { type: "text/csv" })); $t("gradeFile").files = dt.files; $t("gradeFile").dispatchEvent(new Event("change", { bubbles: true })); return true; })()`);
+    for (let i = 0; i < 40 && !/이수 과목 \d+개/.test(await ev(`$t("takenStatus").textContent`)); i++) await sleep(50);
+    assert.match(await ev(`$t("takenStatus").textContent`), /이수 과목 3개.*재수강 가능 3개/);
+    await ev(makeResult);
+    await ev(`$t("saveSchedule").click(); $t("next").click(); $t("saveSchedule").click(); true`);
+    const all = await ev(`JSON.stringify(Object.fromEntries(Object.entries(localStorage)))`);
+    assert.match(all, /timetable-maker:saved/);
+    assert.match(all, /TS90001/); // 과목코드는 저장된다
+    const grades = ["A+", "A0", "B+", "B0", "C+", "C0", "D+", "D0", "D", "F", "P", "NP"];
+    for (const value of await ev(`Object.values(localStorage)`)) {
+      for (const g of grades) assert.ok(!value.includes(`"${g}"`), `등급 ${g}가 저장됨: ${value.slice(0, 200)}`);
+    }
+  });
+
+  await t.test("N4 폭 375px: 어느 화면에서도 가로 스크롤이 생기지 않는다", async () => {
+    await send("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 2, mobile: true });
+    try {
+      // 넘치는 요소가 있으면 무엇인지 알려 준다
+      const check = async (label) => {
+        const r = await ev(`(() => {
+          const w = document.documentElement.scrollWidth;
+          const over = [...document.querySelectorAll("body *")].filter((el) => el.getClientRects().length && el.getBoundingClientRect().right > 375.5)
+            .slice(0, 5).map((el) => el.tagName.toLowerCase() + (el.id ? "#" + el.id : "") + "." + el.className + " " + Math.round(el.getBoundingClientRect().right));
+          return { w, over };
+        })()`);
+        assert.ok(r.w <= 375, `${label}: scrollWidth ${r.w} / ${r.over.join(", ")}`);
+      };
+      await fresh();
+      await check("처음 화면");
+      await ev(makeResult);
+      await ev(`$t("saveSchedule").click(); true`);
+      await check("결과 + 저장 버튼");
+      await ev(`$t("savedList").querySelector("button[data-open]").click(); true`);
+      assert.equal(await ev(`visible("savedView")`), true);
+      await check("저장한 시간표 펼침");
+      await ev(`setSel("myGrade","1"); setSel("freshmanDept","자유전공학부"); true`);
+      await check("1학년 자유전공학부");
+      // 주전공 이름이 가장 긴 전공을 골라도 넘치지 않는다
+      await ev(`setSel("myGrade","3"); setSel("mainMajor", [...$t("mainMajor").options].filter((o) => !o.parentElement.disabled).sort((a, b) => b.text.length - a.text.length)[0].value); true`);
+      await check("긴 전공 이름");
+    } finally {
+      await send("Emulation.clearDeviceMetricsOverride");
+    }
   });
 
   // 화면과 코드 어디에도 쓰지 않기로 한 표현이라, 검사하는 이 파일에도 글자 그대로 적지 않고 조각을 이어 붙인다

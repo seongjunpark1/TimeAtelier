@@ -1,7 +1,9 @@
 # 시간표 공방
 
 주전공(+ 복수전공·부전공)과 꼭 넣을 과목, 학점·공강 조건을 정하면, 학교 전공 규칙에 맞고 이미 들은 과목을 뺀 시간표 조합을 **백트래킹**으로 찾아 **점수가 높은 상위 20개**를 보여 주는 웹 페이지입니다.
-서버와 프레임워크 없이 HTML/CSS/JavaScript만으로 동작하고, GitHub Pages(https://seongjunpark1.github.io/TimeAtelier/)에 배포했습니다.
+서버와 프레임워크 없이 HTML/CSS/JavaScript만으로 동작하고, GitHub Pages에 배포했습니다.
+
+배포 주소: https://seongjunpark1.github.io/TimeAtelier/
 
 - 대상: 성공회대학교 재학생, 2026학년도 2학기 개설강좌 403개
 - 과목: AI활용프로그래밍

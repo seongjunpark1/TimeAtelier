@@ -46,3 +46,31 @@ test("과목코드 대응표: 예전 코드를 이수했으면 새 코드도 이
 test("과목코드 열이 없으면 원인을 알려주는 오류", () => {
   assert.throws(() => extractTakenCourses("이름,점수\n홍길동,90"), /과목코드/);
 });
+
+// ---------- 잘못 올린 파일 (예외 상황) ----------
+// 브라우저의 file.text()는 파일을 항상 UTF-8로 읽는다. 아래 테스트도 같은 방식으로 바이트를 글자로 바꾼다.
+const readAsBrowser = (bytes) => new TextDecoder("utf-8").decode(new Uint8Array(bytes));
+
+test("빈 파일이나 빈 줄만 있는 파일은 '빈 파일' 오류", () => {
+  assert.throws(() => extractTakenCourses(""), /빈 파일/);
+  assert.throws(() => extractTakenCourses("﻿\r\n"), /빈 파일/);
+});
+
+test("'CSV UTF-8'이 아닌 그냥 'CSV'로 저장해 한글이 깨지면 CSV UTF-8로 다시 저장하라고 안내한다", () => {
+  // "No,과목코드,과목명,등급 / 1,AB12345,가짜과목,A0"를 한글 Windows 기본 인코딩(CP949)으로 저장한 바이트
+  const cp949 = [78, 111, 44, 176, 250, 184, 241, 196, 218, 181, 229, 44, 176, 250, 184, 241, 184, 237, 44, 181, 238, 177, 222, 13, 10,
+    49, 44, 65, 66, 49, 50, 51, 52, 53, 44, 176, 161, 194, 165, 176, 250, 184, 241, 44, 65, 48, 13, 10];
+  assert.throws(() => extractTakenCourses(readAsBrowser(cp949)), /CSV UTF-8/);
+});
+
+test("엑셀 파일(.xlsx)을 그대로 올리면 CSV UTF-8로 저장하라고 안내한다", () => {
+  // .xlsx는 zip 파일이라 'PK'로 시작하는 바이너리다
+  const xlsx = [80, 75, 3, 4, 20, 0, 6, 0, 8, 0, 0, 0, 33, 0, 98, 238, 157, 104, 94, 1, 0, 0, 144, 4, 0, 0];
+  assert.throws(() => extractTakenCourses(readAsBrowser(xlsx)), /CSV UTF-8/);
+});
+
+test("열 이름은 맞지만 과목 행이 없으면(합계 행만) 이수 과목 0개를 돌려준다", () => {
+  const onlyTotal = "﻿No,년도,학기,과목코드,과목명,이수구분,학점,등급\r\n1,,,,,합계,0,\r\n";
+  const { taken, retake } = extractTakenCourses(onlyTotal);
+  assert.equal(taken.length + retake.length, 0); // app.js는 이때 '과목코드가 있는 행을 찾지 못했습니다'를 띄운다
+});

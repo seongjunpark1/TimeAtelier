@@ -19,6 +19,7 @@ import * as store from "./storage.js";
 import { COLORS, layoutGrid } from "./grid.js";
 import * as saved from "./saved.js";
 import { createSavedView } from "./saved-view.js";
+import { validateCourses, validateCourseMap, validateMajorRules, summarizeErrors } from "./validate.js";
 
 const $ = (id) => document.getElementById(id);
 const MAX_SEARCH_RESULTS = 60;
@@ -85,13 +86,23 @@ async function init() {
     ]);
     if (!coursesRes.ok) throw new Error(`courses.json ${coursesRes.status}`);
     const data = await coursesRes.json();
+    // 강좌 데이터는 없으면 아무것도 할 수 없으므로, 형식이 틀리면 어느 강좌가 문제인지 알려 주고 멈춘다
+    const check = validateCourses(data);
+    if (!check.ok) {
+      showStatus(`강좌 데이터(courses.json)에 문제가 있습니다: ${summarizeErrors(check.errors)}`, true);
+      console.error("courses.json 검사 결과:", check.errors);
+      return;
+    }
     state.courses = data.courses;
     state.byId = new Map(data.courses.map((c) => [c.id, c]));
     state.semester = data.semester;
-    state.codeMap = mapRes.ok ? (await mapRes.json()).map : {};
-    // 규칙 파일이 없어도 시간표는 짤 수 있어야 하므로, 실패하면 기본값(검사 안 함)을 그대로 쓴다
-    if (rulesRes.ok) state.rules = { ...state.rules, ...(await rulesRes.json()) };
-    else console.warn("major_rules.json을 읽지 못해 전공 규칙 검사를 건너뜁니다.");
+    // 과목코드 대응표와 전공 규칙은 없거나 틀려도 시간표는 짤 수 있어야 한다.
+    // 파일 하나의 오류로 화면 전체가 멈추지 않게 따로 읽고, 문제가 있으면 기본값을 쓴다
+    const codeMap = await readOptionalJSON(mapRes, "course_map.json", validateCourseMap);
+    state.codeMap = codeMap ? codeMap.map : {};
+    const rules = await readOptionalJSON(rulesRes, "major_rules.json", validateMajorRules);
+    if (rules) state.rules = { ...state.rules, ...rules };
+    else console.warn("major_rules.json을 쓸 수 없어 전공 규칙 검사를 건너뜁니다.");
     $("semester").textContent = `(${data.semester.replace("-", "학년도 ")}학기 · 강좌 ${data.courses.length}개)`;
   } catch (err) {
     showStatus("강좌 데이터를 불러오지 못했습니다. 파일을 직접 열지 말고 로컬 서버(Live Server 등)로 실행하세요.", true);
@@ -122,6 +133,26 @@ async function init() {
     showStatus("화면을 준비하다 오류가 났습니다. 맨 아래 '전체 초기화'를 눌러 저장된 설정을 지운 뒤 다시 해 보세요.", true);
     console.error(err);
   }
+}
+
+/**
+ * 없어도 되는 데이터 파일(과목코드 대응표, 전공 규칙)을 읽는다.
+ * 응답 실패·JSON 구문 오류·형식 오류면 콘솔에 이유를 남기고 null을 돌려준다 (앱은 기본값으로 계속 동작)
+ */
+async function readOptionalJSON(res, name, validate) {
+  if (!res.ok) {
+    console.warn(`${name}을(를) 읽지 못했습니다 (${res.status}).`);
+    return null;
+  }
+  try {
+    const data = await res.json();
+    const check = validate(data);
+    if (check.ok) return data;
+    console.warn(`${name} 형식이 맞지 않아 쓰지 않습니다:`, check.errors);
+  } catch (err) {
+    console.warn(`${name}의 JSON 형식이 잘못돼 쓰지 않습니다:`, err.message);
+  }
+  return null;
 }
 
 /** 전체 초기화: 이 앱의 저장값을 모두 지우고 페이지를 다시 연다 (처음 연 것과 똑같은 상태가 확실히 보장된다) */
